@@ -3,27 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kachinga Silwimba | Data Science & Climate Modeling</title>
+  <title>Kachinga Silwimba | Portfolio Showcase</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    /* Color palette */
     :root {
-      --clr-bg: #f9fafb;
-      --clr-primary: #2c3e50;
-      --clr-accent: #3498db;
-      --clr-text: #333;
-      --clr-light: #fff;
-      --clr-muted: #777;
+      --clr-bg: #f4f6f8;
+      --clr-primary: #1d2d50;
+      --clr-secondary: #133b5c;
+      --clr-accent: #e43f5a;
+      --clr-text: #2e3d49;
+      --clr-light: #ffffff;
       --radius: 0.5rem;
       --transition: 0.3s ease;
       --font-base: 'Roboto', Arial, sans-serif;
     }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: var(--font-base);
       background: var(--clr-bg);
@@ -33,21 +28,21 @@
     header {
       background: var(--clr-primary);
       color: var(--clr-light);
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 4rem 1rem;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 300;
     }
     nav {
-      background: var(--clr-accent);
+      background: var(--clr-secondary);
+      padding: 1rem;
       text-align: center;
-      padding: 0.75rem;
     }
     nav a {
       color: var(--clr-light);
@@ -57,48 +52,92 @@
       transition: color var(--transition);
     }
     nav a:hover {
+      color: var(--clr-accent);
+    }
+    .intro {
+      text-align: center;
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .intro h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
       color: var(--clr-primary);
+    }
+    .intro p {
+      font-size: 1rem;
+      color: var(--clr-text);
     }
     section {
       padding: 4rem 1rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
       border-bottom: 3px solid var(--clr-accent);
-      display: inline-block;
-      padding-bottom: 0.25rem;
-    }
-    h3 {
+      padding-bottom: 0.5rem;
       color: var(--clr-primary);
-      margin-bottom: 0.5rem;
     }
-    p, li {
-      margin-bottom: 0.75rem;
-    }
-    ul {
-      list-style: disc inside;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
     }
     .card {
       background: var(--clr-light);
       border-radius: var(--radius);
       padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform var(--transition);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform var(--transition), box-shadow var(--transition);
     }
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      color: var(--clr-accent);
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    .projects .card {
+      position: relative;
+    }
+    .projects .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--clr-accent);
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
     }
     .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .skill-category {
+      flex: 1 1 200px;
+    }
+    .skill-category h4 {
+      margin-bottom: 0.5rem;
+      color: var(--clr-secondary);
     }
     .skill-category ul {
+      list-style: none;
       padding-left: 1rem;
+    }
+    .skill-category li {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
     }
     footer {
       background: var(--clr-primary);
@@ -116,124 +155,72 @@
 <body>
   <header>
     <h1>Kachinga Silwimba</h1>
-    <p>Ph.D. Candidate | Data Scientist & Climate Modeling Researcher</p>
+    <p>Ph.D. Candidate • Climate & Hydrological Data Scientist</p>
   </header>
+
   <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#publications">Publications</a>
-    <a href="#skills">Skills</a>
+    <a href="#about">About</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#publications">Publications</a> |
+    <a href="#skills">Skills</a> |
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Ph.D. candidate in Computing at Boise State University, specializing in machine learning applications for climate and hydrological modeling. My work focuses on designing efficient, accurate emulators for numerical climate models—drastically reducing computation time while maintaining high-fidelity results.</p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <div class="card">
-      <h3>Boise State University, Boise, ID</h3>
-      <p><strong>Ph.D. in Computing (Data Science),</strong> Expected Fall 2025</p>
-      <p><em>Research:</em> Machine learning & AI for climate modeling, uncertainty quantification, and interpretability.</p>
-    </div>
-    <div class="card">
-      <h3>African Institute for Mathematical Sciences (AIMS), Kigali, Rwanda</h3>
-      <p><strong>M.Sc. in Mathematical Sciences (Climate Science),</strong> Aug 2020 – Jul 2021</p>
-      <p><em>Thesis:</em> Assessment of CMIP5 & CMIP6 model performance on precipitation extremes in Southern Africa.</p>
-    </div>
-    <div class="card">
-      <h3>Copperbelt University, Kitwe, Zambia</h3>
-      <p><strong>B.Sc. in Physics,</strong> May 2015 – Oct 2019</p>
-      <p><em>Senior Project:</em> Harmonic-motion mechanical valve mechanism for precision fluid control.</p>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Graduate Research Assistant, Boise State University</h3>
-      <p><em>Aug 2021 – Present</em></p>
-      <ul>
-        <li>Accelerated climate data analysis by 50% via optimized Python & GPU workflows.</li>
-        <li>Enhanced model reliability by 20% using evidential deep learning techniques.</li>
-        <li>Published findings in peer-reviewed journals and presented at international conferences.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>BAF Fellow, William Averette Anderson Fund</h3>
-      <p><em>Sep 2024 – Present</em></p>
-      <ul>
-        <li>Pioneering disaster resilience research and securing grant funding.</li>
-        <li>Engaged with stakeholders at national-science symposia.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Advanced Study Program Fellow, NCAR</h3>
-      <p><em>Mar 2024 – Jun 2024</em></p>
-      <ul>
-        <li>Boosted land-surface model efficiency by 25% in large-scale climate simulations.</li>
-        <li>Developed improved parameterizations for WRF & CLM frameworks.</li>
-      </ul>
-    </div>
-  </section>
+  <div class="intro" id="about">
+    <h2>Welcome to My Research Showcase</h2>
+    <p>I blend machine learning, high-performance computing, and advanced statistical methods to tackle pressing challenges in climate and hydrological modeling. Explore my projects, publications, and technical expertise below.</p>
+  </div>
 
   <section id="projects">
-    <h2>Selected Projects</h2>
-    <div class="card">
-      <h3>Soil Moisture Dynamics in CLM Across CONUS</h3>
-      <p>Applied EOF analysis to quantify how soil parameters drive moisture variability, informing model calibration and land-management decisions.</p>
-    </div>
-    <div class="card">
-      <h3>EOF + SOM for Soil Moisture Pattern Recognition</h3>
-      <p>Integrated Self-Organizing Maps with EOFs to enhance spatial-temporal clustering of soil moisture in CLM outputs.</p>
-    </div>
-    <div class="card">
-      <h3>EDNN Emulation & Uncertainty Quantification in CLM</h3>
-      <p>Developed evidential deep neural networks with perturbed-parameter ensembles to emulate CLM outputs and deliver rigorous uncertainty estimates.</p>
-    </div>
-    <div class="card">
-      <h3>Hydrological Forecasting in Ungauged Basins</h3>
-      <p>Employing evidential deep learning frameworks to produce robust streamflow predictions under data-scarce conditions.</p>
+    <h2>Featured Projects</h2>
+    <div class="grid projects">
+      <div class="card">
+        <h3>EOF Analysis of Soil Moisture in CLM5</h3>
+        <p>Used Empirical Orthogonal Functions to identify dominant soil moisture patterns across CONUS, benchmarking parameters against ERA5-Land to improve model calibration. fileciteturn0file0</p>
+      </div>
+      <div class="card">
+        <h3>EOF + SOM for Pattern Recognition</h3>
+        <p>Combined EOF decomposition with Self-Organizing Maps to cluster soil moisture regimes, revealing regional sensitivities and informing hydrological forecasting. fileciteturn0file3</p>
+      </div>
+      <div class="card">
+        <h3>EDNN Emulation of CLM5 LAI</h3>
+        <p>Developed an Evidential Deep Neural Network emulator for Leaf Area Index, achieving R² &gt; 0.98 and providing robust aleatoric/epistemic uncertainty estimates. fileciteturn0file2</p>
+      </div>
+      <div class="card">
+        <h3>Hydrological Forecasting in Ungauged Basins</h3>
+        <p>Leveraged EDNN frameworks and perturbed-parameter ensembles to predict streamflow and water storage under data-scarce conditions. fileciteturn0file3</p>
+      </div>
     </div>
   </section>
 
   <section id="publications">
-    <h2>Publications</h2>
-    <div class="card">
-      <p>Silwimba, K. (2025). <strong>Soil Parameterization in Land Surface Models Drives Discrepancies in Soil Moisture Predictions</strong>. Journal of Hydrometeorology.</p>
+    <h2>Key Publications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Soil Parameterization & Moisture Discrepancies</h3>
+        <p>Silwimba, K. et al. (2025). Journal of Hydrometeorology. fileciteturn0file0</p>
+      </div>
+      <div class="card">
+        <h3>Deep Learning Emulation of CLM5 LAI</h3>
+        <p>Silwimba, K. et al. (2024). Climate Dynamics. fileciteturn0file2</p>
+      </div>
     </div>
-    <div class="card">
-      <p>Silwimba, K. (2024). <strong>Deep Learning for Snow Water Equivalent Prediction</strong>. Climate Dynamics.</p>
-    </div>
-    <!-- Additional entries can be added here -->
   </section>
 
   <section id="skills">
     <h2>Technical Skills</h2>
     <div class="skills">
       <div class="skill-category">
-        <h3>Languages & Tools</h3>
-        <ul><li>Python, R, MATLAB, Java, Scala, Bash</li><li>SQL, Git, Docker, DVC</li></ul>
+        <h4>Languages & Tools</h4>
+        <ul><li>Python, R, MATLAB, Bash, SQL</li><li>Git, Docker, DVC, Slurm</li></ul>
       </div>
       <div class="skill-category">
-        <h3>ML & AI</h3>
-        <ul><li>TensorFlow, PyTorch, Keras, Scikit-learn</li><li>EDNN, Generative AI, LLMs</li></ul>
+        <h4>ML & AI Frameworks</h4>
+        <ul><li>TensorFlow, PyTorch, Scikit-learn</li><li>EDNN, Generative AI, LLMs</li></ul>
       </div>
       <div class="skill-category">
-        <h3>Big Data & Cloud</h3>
-        <ul><li>Spark, Hadoop, AWS, GCP, HPC</li><li>Slurm, GPU Acceleration</li></ul>
-      </div>
-      <div class="skill-category">
-        <h3>Climate & Geo Tools</h3>
-        <ul><li>Xarray, Dask, NetCDF, Zarr</li><li>WRF, CDO, NCO, GIS</li></ul>
-      </div>
-      <div class="skill-category">
-        <h3>Visualization</h3>
-        <ul><li>Matplotlib, Cartopy, Plotly, Tableau</li><li>Holoviews</li></ul>
+        <h4>Climate & Geo</h4>
+        <ul><li>Xarray, Dask, NetCDF, Zarr</li><li>WRF, CDO, GIS</li></ul>
       </div>
     </div>
   </section>
@@ -241,12 +228,12 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:kachingasilwimba@u.boisestate.edu">kachingasilwimba@u.boisestate.edu</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/kachingasilwimba</a></p>
-    <p>GitHub: <a href="#">github.com/kachingasilwimba</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/kachingasilwimba">linkedin.com/in/kachingasilwimba</a></p>
+    <p>GitHub: <a href="https://github.com/kachingasilwimba">github.com/kachingasilwimba</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 <strong>Kachinga Silwimba</strong>. All rights reserved.</p>
+    <p>&copy; 2025 Kachinga Silwimba</p>
   </footer>
 </body>
 </html>

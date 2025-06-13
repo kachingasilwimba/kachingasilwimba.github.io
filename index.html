@@ -1,1 +1,260 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kachinga Silwimba - Portfolio</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .project, .publication {
+            margin-bottom: 1.5rem;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill-category {
+            margin-right: 2rem;
+        }
+        .skill-category h3 {
+            margin-bottom: 0.5rem;
+        }
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kachinga Silwimba</h1>
+        <p>PhD Candidate in Computing | Data Scientist</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a PhD candidate in Computing with an emphasis in Data Science at Boise State University, expected to graduate in Fall 2025. My research focuses on leveraging machine learning and deep learning techniques to develop efficient and accurate emulators for numerical climate models. I aim to reduce computational costs while maintaining accuracy in climate modeling, contributing to a better understanding of climate processes and prediction of future scenarios.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Boise State University, Boise, ID</h3>
+        <p>Ph.D. in Computing (Data Science Major), Expected Fall 2025</p>
+        <p>Research Focus: Machine learning and AI for climate and hydrological modeling, emphasizing uncertainty estimation and interpretability</p>
+        <h3>African Institute for Mathematical Sciences (AIMS), Kigali, Rwanda</h3>
+        <p>M.Sc. in Mathematical Sciences (Climate Science Major), Aug. 2020 - Jul. 2021</p>
+        <p>Thesis: Evaluation of CMIP5 and CMIP6 models for simulating precipitation extremes in Southern Africa</p>
+        <h3>Copperbelt University, Kitwe, Zambia</h3>
+        <p>B.Sc. in Physics, May 2015 - Oct. 2019</p>
+        <p>Senior Project: Developed a mechanical valve releasing mechanism using harmonic motion principles for efficient fluid control</p>
+    </section>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>Graduate Research Assistant, Boise State University, Aug. 2021 - Present</h3>
+        <p>Reduced climate model data analysis time by 50% using Python workflows and GPU computing. Improved model reliability by 20% with Evidential Deep Learning. Enhanced climate pattern analysis by 30%. Published research in peer-reviewed journals.</p>
+        <h3>Bill Anderson Fund (BAF) Fellow, William Averette Anderson Fund for Hazard & Disaster Mitigation Education & Research, Sep. 2024 - Present</h3>
+        <p>Focused on disaster resilience, grant writing, and community-engaged research. Networked at national conferences.</p>
+        <h3>Advanced Study Program Graduate Research Fellow, NSF National Center for Atmospheric Research (NCAR), Mar. 2024 - Jun. 2024</h3>
+        <p>Improved computational efficiency by 25% in climate model assessments. Conducted large-scale simulations and enhanced land surface modeling.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Assessing the Impact of Soil Parameters on Soil Moisture Dynamics in CLMS Across the Contiguous United States Using Empirical Orthogonal Function Analysis</h3>
+            <p>Objective: Evaluate how different soil parameters influence soil moisture dynamics in the Community Land Model (CLMS) across the Contiguous United States (CONUS) to improve model calibration and land management decisions.</p>
+            <p>Methods: Utilized Empirical Orthogonal Function (EOF) analysis to decompose data into spatial and temporal components, identifying dominant patterns and variability in soil moisture.</p>
+            <p>Outcomes: Published work showing how soil parameter setups affect soil moisture patterns, leading to more accurate predictions and better land management decisions.</p>
+        </div>
+        <div class="project">
+            <h3>Enhancing Soil Moisture Pattern Recognition in CLMS Simulations Over CONUS by Integrating Empirical Orthogonal Functions with Self-Organizing Maps</h3>
+            <p>Objective: Improve recognition and understanding of soil moisture patterns in CLMS simulations by combining EOF with Self-Organizing Maps (SOM) for detailed spatial and temporal analysis.</p>
+            <p>Methods: Integrated EOF and SOM to cluster data and identify patterns in soil moisture from CLMS simulations.</p>
+            <p>Outcomes: Contributed to a 30% improvement in validation metrics, enhancing accuracy and interpretability of soil moisture dynamics.</p>
+        </div>
+        <div class="project">
+            <h3>Emulating and Quantifying Uncertainty in CLMS Simulations Using Evidential Deep Neural Networks and Augmented Perturbed Parameter Ensembles</h3>
+            <p>Objective: Emulate and quantify uncertainty in CLMS simulations to improve reliability and trustworthiness of model outputs, reducing computational costs.</p>
+            <p>Methods: Employed Evidential Deep Neural Networks (EDNN) and Augmented Perturbed Parameter Ensembles to analyze simulations and estimate uncertainty.</p>
+            <p>Outcomes: Under review; presented at conferences, showing promise in delivering enhanced uncertainty estimates.</p>
+        </div>
+        <div class="project">
+            <h3>Advancing Prediction and Uncertainty Estimation in Ungauged Basins Using Evidential Deep Learning Frameworks</h3>
+            <p>Objective: Develop robust models for hydrological forecasting in data-scarce regions using advanced machine learning techniques.</p>
+            <p>Methods: Utilized Evidential Deep Learning Frameworks to handle uncertainty in predictions for ungauged basins.</p>
+            <p>Outcomes: In preparation; part of ongoing research to address challenges in hydrological modeling.</p>
+        </div>
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication">
+            <p>Silwimba, K. (2023). Fitting Rwanda’s Currency Market Returns with the Poisson Compound Model with Normal Inverse Gaussian Jumps. [Journal Name].</p>
+        </div>
+        <div class="publication">
+            <p>Silwimba, K. (2025). Soil Parameterization in Land Surface Models Drives Large Discrepancies in Soil Moisture Predictions Across Hydrologically Complex regions of the Contiguous United States. [Journal Name].</p>
+        </div>
+        <div class="publication">
+            <p>Silwimba, K. (2024). Deep Learning Approach to predict Snow Water Equivalent from Atmospheric Forcings. [Journal Name].</p>
+        </div>
+        <div class="publication">
+            <p>Silwimba, K. (2024). Examining Hydrometeorological Controls on Transpiration in a Semiarid, Snow-dominated Watershed Using Machine-learning Enabled Approaches. [Journal Name].</p>
+        </div>
+        <div class="publication">
+            <p>Silwimba, K. (2024). History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model. [Journal Name].</p>
+        </div>
+        <div class="publication">
+            <p>Silwimba, K. (2023). Integrating Empirical Orthogonal Functions (EOFs) into Machine Learning Model. [Journal Name].</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill-category">
+                <h3>Programming & Scripting</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>MATLAB</li>
+                    <li>Java</li>
+                    <li>Bash</li>
+                    <li>Scala</li>
+                    <li>PySpark</li>
+                    <li>Linux</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Machine Learning & AI</h3>
+                <ul>
+                    <li>TensorFlow</li>
+                    <li>PyTorch</li>
+                    <li>Keras</li>
+                    <li>Scikit-learn</li>
+                    <li>Deep Learning</li>
+                    <li>Generative AI</li>
+                    <li>Large Language Models</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Big Data & Cloud Computing</h3>
+                <ul>
+                    <li>Hadoop</li>
+                    <li>Spark</li>
+                    <li>AWS</li>
+                    <li>Google Cloud</li>
+                    <li>GPU Acceleration</li>
+                    <li>HPC clusters</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Climate & Scientific Tools</h3>
+                <ul>
+                    <li>GIS</li>
+                    <li>Xarray</li>
+                    <li>Dask</li>
+                    <li>NetCDF</li>
+                    <li>Zarr</li>
+                    <li>CLMS</li>
+                    <li>WRF</li>
+                    <li>CDO</li>
+                    <li>NCO</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Management & MLOps</h3>
+                <ul>
+                    <li>DVC</li>
+                    <li>GitHub version control</li>
+                    <li>Docker</li>
+                    <li>Singularity</li>
+                    <li>CI/CD pipelines</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Visualization & Analysis</h3>
+                <ul>
+                    <li>Matplotlib</li>
+                    <li>Cartopy</li>
+                    <li>Holoviews</li>
+                    <li>Plotly</li>
+                    <li>Tableau</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Software Engineering & HPC Optimization</h3>
+                <ul>
+                    <li>Slurm job scheduling</li>
+                    <li>Memory management</li>
+                    <li>Load balancing</li>
+                    <li>Containerization</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Model Interpretability</h3>
+                <ul>
+                    <li>SHAP</li>
+                    <li>Sobol</li>
+                    <li>Fourier Sensitivity Analysis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: kachingasilwimba@u.boisestate.edu</p>
+        <p>Phone: (+1) 208-831-0244</p>
+        <p>LinkedIn: [Link to LinkedIn profile]</p>
+        <p>GitHub: [Link to GitHub profile]</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Kachinga Silwimba. All rights reserved.</p>
+    </footer>
+</body>
+</html>

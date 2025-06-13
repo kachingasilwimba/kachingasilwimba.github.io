@@ -35,9 +35,15 @@
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
-    header p {
-      font-size: 1.2rem;
+    header .subtitle {
+      font-size: 1rem;
       font-weight: 300;
+      margin-bottom: 0.25rem;
+    }
+    header .skills-tag {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--clr-accent);
     }
     nav {
       background: var(--clr-secondary);
@@ -51,9 +57,7 @@
       font-weight: 500;
       transition: color var(--transition);
     }
-    nav a:hover {
-      color: var(--clr-accent);
-    }
+    nav a:hover { color: var(--clr-accent); }
     .intro {
       text-align: center;
       padding: 3rem 1rem;
@@ -146,16 +150,14 @@
       padding: 2rem 1rem;
       margin-top: 4rem;
     }
-    footer a {
-      color: var(--clr-accent);
-      text-decoration: none;
-    }
+    footer a { color: var(--clr-accent); text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
     <h1>Kachinga Silwimba</h1>
-    <p>Ph.D. Candidate • Climate & Hydrological Data Scientist</p>
+    <div class="subtitle">Data Science PhD Candidate | Graduate Research Assistant | Data Engineer | Data Scientist</div>
+    <div class="skills-tag">Climate & Earth System Modeling | Machine Learning for Geospatial | Deep Learning | HPC | Uncertainty Quantification</div>
   </header>
 
   <nav>
@@ -168,61 +170,57 @@
 
   <div class="intro" id="about">
     <h2>Welcome to My Research Showcase</h2>
-    <p>I blend machine learning, high-performance computing, and advanced statistical methods to tackle pressing challenges in climate and hydrological modeling. Explore my projects, publications, and technical expertise below.</p>
+    <p>I leverage advanced AI/ML techniques, high-performance computing, and geospatial analytics to enhance climate and hydrological models. Discover how I apply deep learning, uncertainty quantification, and data engineering to solve real-world Earth system challenges.</p>
   </div>
 
   <section id="projects">
-    <h2>Featured Projects</h2>
+    <h2>Featured AI & ML Projects</h2>
     <div class="grid projects">
       <div class="card">
-        <h3>EOF Analysis of Soil Moisture in CLM5</h3>
-        <p>Used Empirical Orthogonal Functions to identify dominant soil moisture patterns across CONUS, benchmarking parameters against ERA5-Land to improve model calibration. fileciteturn0file0</p>
+        <h3>AI-Powered EOF Analysis in CLM5</h3>
+        <p>Built Python-based AI pipelines using Empirical Orthogonal Functions to extract spatiotemporal soil moisture patterns across CONUS, leveraging HPC clusters for large-scale geospatial data processing.</p>
       </div>
       <div class="card">
-        <h3>EOF + SOM for Pattern Recognition</h3>
-        <p>Combined EOF decomposition with Self-Organizing Maps to cluster soil moisture regimes, revealing regional sensitivities and informing hydrological forecasting. fileciteturn0file3</p>
+        <h3>EOF + SOM Geospatial Clustering</h3>
+        <p>Integrated EOF decomposition with Self-Organizing Maps (unsupervised ML) to classify soil moisture regimes, unveiling regional sensitivities and improving model interpretability through advanced clustering algorithms.</p>
       </div>
       <div class="card">
-        <h3>EDNN Emulation of CLM5 LAI</h3>
-        <p>Developed an Evidential Deep Neural Network emulator for Leaf Area Index, achieving R² &gt; 0.98 and providing robust aleatoric/epistemic uncertainty estimates. fileciteturn0file2</p>
+        <h3>EDNN Deep Learning Emulation of CLM5 LAI</h3>
+        <p>Developed Evidential Deep Neural Networks for rapid Leaf Area Index emulation, achieving R² &gt; 0.98 and quantifying both aleatoric and epistemic uncertainties in real-time predictions.</p>
       </div>
       <div class="card">
-        <h3>Hydrological Forecasting in Ungauged Basins</h3>
-        <p>Leveraged EDNN frameworks and perturbed-parameter ensembles to predict streamflow and water storage under data-scarce conditions. fileciteturn0file3</p>
+        <h3>Surrogate ML for Hydrological Forecasting</h3>
+        <p>Deployed surrogate AI models using perturbed-parameter ensembles to forecast streamflow and terrestrial water storage in ungauged basins, combining physical insights with deep learning and uncertainty quantification.</p>
       </div>
     </div>
   </section>
 
-<section id="publications">
+  <section id="publications">
     <h2>Key Publications</h2>
     <div class="grid">
       <div class="card">
-        <h3>Fitting Rwanda’s Currency Market Returns with the Poisson Compound Model with Normal Inverse Gaussian Jumps</h3>
-        <p>E. Malichi, M. Ndengo, D. Mukonda, S. Kiilu, D. Azamuke &amp; K. Silwimba (2023). Journal of Financial Risk Management, 12(4), 388–404.</p>
+        <h3>Fitting Rwanda’s Currency Market Returns</h3>
+        <p>E. Malichi et al. (2023). Journal of Financial Risk Management, 12(4), 388–404.</p>
       </div>
       <div class="card">
-        <h3>Soil Parameterization in Land Surface Models Drives Large Discrepancies in Soil Moisture Predictions Across Hydrologically Complex Regions of the Contiguous United States</h3>
-        <p>K. Silwimba, A.N. Flores, I. Cionni, S.A. Billings, P.L. Sullivan, H. Ajami et al. (2025). EGUsphere, 1–36.</p>
+        <h3>Soil Parameterization & Moisture Discrepancies</h3>
+        <p>K. Silwimba et al. (2025). EGUsphere, 1–36.</p>
       </div>
       <div class="card">
-        <h3>Deep Learning Approach to Predict Snow Water Equivalent from Atmospheric Forcings</h3>
-        <p>S. Akor, K. Silwimba &amp; A.N. Flores (2024). Authorea Preprints.</p>
+        <h3>Deep Learning for Snow Water Equivalent</h3>
+        <p>S. Akor et al. (2024). Authorea Preprints.</p>
       </div>
       <div class="card">
-        <h3>Examining Hydrometeorological Controls on Transpiration in a Semiarid, Snow-Dominated Watershed Using Machine-Learning Enabled Approaches</h3>
-        <p>D. Bishop, A.N. Flores, S. Akor, K. Silwimba &amp; I. Cionni (2024). AGU Fall Meeting Abstracts, H21R-0875.</p>
+        <h3>ML Controls on Transpiration</h3>
+        <p>D. Bishop et al. (2024). AGU Fall Meeting Abstracts, H21R-0875.</p>
       </div>
       <div class="card">
-        <h3>History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model</h3>
-        <p>K. Silwimba, A.N. Flores, C. Becker, L.R. Hawkins, K. Dagon &amp; I. Cionni (2024). AGU Fall Meeting Abstracts, GC11T-0152.</p>
+        <h3>EDNN History Matching in CLM</h3>
+        <p>K. Silwimba et al. (2024). AGU Fall Meeting Abstracts, GC11T-0152.</p>
       </div>
       <div class="card">
-        <h3>How Do Roots Restructure Water and Carbon Dynamics in the Critical Zone?</h3>
-        <p>P.L. Sullivan (2023). EGU General Assembly Abstracts, EGU-4538.</p>
-      </div>
-      <div class="card">
-        <h3>Integrating Empirical Orthogonal Functions (EOFs) into Machine Learning Models</h3>
-        <p>K. Silwimba (2023). Conference proceedings.</p>
+        <h3>EOFs in Machine Learning Models</h3>
+        <p>K. Silwimba (2023). Conference Proceedings.</p>
       </div>
     </div>
   </section>
@@ -231,16 +229,20 @@
     <h2>Technical Skills</h2>
     <div class="skills">
       <div class="skill-category">
-        <h4>Languages & Tools</h4>
-        <ul><li>Python, R, MATLAB, Bash, SQL</li><li>Git, Docker, DVC, Slurm</li></ul>
+        <h4>Programming & Data Engineering</h4>
+        <ul><li>Python, R, Bash, SQL</li><li>Git, Docker, DVC, Slurm, HPC</li></ul>
       </div>
       <div class="skill-category">
-        <h4>ML & AI Frameworks</h4>
-        <ul><li>TensorFlow, PyTorch, Scikit-learn</li><li>EDNN, Generative AI, LLMs</li></ul>
+        <h4>AI & ML Frameworks</h4>
+        <ul><li>TensorFlow, PyTorch, Keras</li><li>Scikit-learn, EDNN, SOMs, EOFs</li></ul>
       </div>
       <div class="skill-category">
-        <h4>Climate & Geo</h4>
-        <ul><li>Xarray, Dask, NetCDF, Zarr</li><li>WRF, CDO, GIS</li></ul>
+        <h4>Geospatial & Climate Tools</h4>
+        <ul><li>Xarray, Dask, NetCDF, Zarr</li><li>WRF, CDO, GIS, ERA5</li></ul>
+      </div>
+      <div class="skill-category">
+        <h4>Visualization & Analysis</h4>
+        <ul><li>Matplotlib, Cartopy, Plotly</li><li>Tableau, Holoviews</li></ul>
       </div>
     </div>
   </section>

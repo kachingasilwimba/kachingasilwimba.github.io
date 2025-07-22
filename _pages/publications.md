@@ -8,7 +8,7 @@ author_profile: true
 <!-- {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %} -->
-<a href="https://scholar.google.com/citations?user=UluXFnQAAAAJ&hl=en" style="color:#1a73e8; font-weight:bold;">Google Scholar profile</a>
+<a href="https://scholar.google.com/citations?user=UluXFnQAAAAJ&hl=en" style="color:#1a73e8; font-weight:bold;">Google Scholar Profile</a>
 
 
 

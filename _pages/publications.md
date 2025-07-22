@@ -15,11 +15,8 @@ author_profile: true
 
 <!-- Jekyll template with colored Google Scholar link -->
 {% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}" style="color: #0000FF;">my Google Scholar profile</a>.</u>
+  You can also find my articles on <u><a href="{{author.googlescholar}}" style="color: #0000FF;">Google Scholar profile</a>.</u>
 {% endif %}
-
-<!-- Markdown link with colored Google Scholar profile -->
-<a href="https://scholar.google.com/citations?user=UluXFnQAAAAJ&hl=en" style="color: #0000FF;">Google Scholar profile</a>
 
 {% include base_path %}
 

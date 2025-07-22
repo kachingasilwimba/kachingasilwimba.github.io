@@ -10,7 +10,8 @@ author_profile: true
 {% endif %} -->
 
 [Google Scholar profile](https://scholar.google.com/citations?user=UluXFnQAAAAJ&hl=en)
-\href{https://scholar.google.com/citations?user=UluXFnQAAAAJ&hl=en}{\textcolor{blue}{Google Scholar profile}}
+<a href="https://scholar.google.com/citations?user=UluXFnQAAAAJ&hl=en" style="color:#1a73e8; font-weight:bold;">Google Scholar profile</a>
+
 
 
 {% include base_path %}

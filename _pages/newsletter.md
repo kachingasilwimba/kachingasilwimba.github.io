@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Newsletters"
+title: "<span style='color:#0077cc;'>Newsletters</span>"
 permalink: /newsletter/
 author_profile: true
 ---

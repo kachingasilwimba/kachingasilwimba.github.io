@@ -22,8 +22,6 @@ author_profile: true
           margin-right:1rem;">
   CIML 2023 Summer Institute Course Outline
 </a>       
-
-**Course Outline** https://github.com/ciml-org/ciml-summer-institute-2023  
 **Location:** San Diego, CA, USA      
 **Date:** summer, 2023     
 

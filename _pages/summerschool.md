@@ -32,4 +32,5 @@ author_profile: true
 - Scalable ML and deep learning techniques (including LLM inference)
 - Hands-on Tutorial Experience
 - One‑on‑One Expert Consultation
+- Team-Based Training Projects 
   

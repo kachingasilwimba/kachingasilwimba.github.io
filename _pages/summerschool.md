@@ -6,6 +6,36 @@ permalink: /summerschool/
 author_profile: true
 ---
 
+## URSSI Summer School in Open Science and Research Software Engineering at UIUC
+**School:** <a href="https://bssw.io/events/urssi-summer-school-in-open-science-and-research-software-engineering-at-uiuc"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  CIML Summer Institute
+</a>       
+
+**Course:** <a href="https://github.com/si2-urssi"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  URSSI 2024 Summer School Course Outline
+</a>       
+**Location:** Urbana-Champaign, IL, USA      
+**Date:** summer, 2024     
+
+- Software design and modularity
+- Collaborative development with Git/GitHub
+- Software testing in Python
+- Peer code review
+- Packaging and distributing Python software
+- Documentation and licensing
+- Reproducibility and open science practices
+- Release and deployment best practice
+- Use of open tools and open results 
+
+
 ## Cyberinfrastructure-Enabled Machine Learning (CIML) Summer Institute  
 **School:** <a href="https://www.sdsc.edu/education/training-programs/CIML.html"
    style="display:inline-block;
@@ -34,3 +64,6 @@ author_profile: true
 - One‑on‑One Expert Consultation
 - Team-Based Training Projects 
   
+
+
+

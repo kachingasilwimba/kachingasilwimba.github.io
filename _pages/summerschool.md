@@ -85,6 +85,33 @@ author_profile: true
 - Understanding Personal Values and the Values of Others
 - Vision Creation & Leading with Integrity
 - Resilience and Managing Uncertainty
+  
+----
+
+## Trustworthy Artificial Intelligence for Environmental Science  
+**School:** <a href="https://www.cisl.ucar.edu/events/tai4es-2022-summer-school"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  TAI4ES 2022 Summer School
+</a>       
+
+**Course:** <a href="https://github.com/ai2es/tai4es-trustathon-2022"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  TAI4ES Hackathon
+</a>       
+**Location:** Boulder, CO, USA      
+**Date:** summer, 2022     
+
+- Foundations of Trustworthy AI
+- Explainable AI (XAI)
+- Robustness Evaluation
+- Ethics & Trust Integration
+- Trust‑a‑Thon Practical Experience
 
 ---
 

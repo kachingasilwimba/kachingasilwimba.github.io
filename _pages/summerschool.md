@@ -34,6 +34,7 @@ author_profile: true
 - Release and deployment best practice
 - Use of open tools and open results 
 
+---
 
 ## Cyberinfrastructure-Enabled Machine Learning (CIML) Summer Institute  
 **School:** <a href="https://www.sdsc.edu/education/training-programs/CIML.html"
@@ -63,6 +64,7 @@ author_profile: true
 - One‑on‑One Expert Consultation
 - Team-Based Training Projects 
   
+---
 
 ## The LeaderShape Institute  
 **School:** <a href="https://leadershape.org/"
@@ -83,6 +85,8 @@ author_profile: true
 - Understanding Personal Values and the Values of Others
 - Vision Creation & Leading with Integrity
 - Resilience and Managing Uncertainty
+
+---
 
 ## Community Terrestrial Systems Model (CTSM) 
 **School:** <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
@@ -108,6 +112,8 @@ author_profile: true
 - Visualizing and analyzing model outputs
 - Modifying and customizing code
 - Applying reproducible workflows with cloud and version control
+
+---
 
 ## Weather Research & Forecasting (WRF) 
 **School:** <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"

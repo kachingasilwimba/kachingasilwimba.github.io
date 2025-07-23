@@ -17,7 +17,7 @@ I place strong emphasis on [interoperability](https://www.ogc.org/about/interope
 
 I am passionate about bridging scientific research with practical solutions, using AI, geospatial modeling, and data engineering to tackle real-world challenges in climate adaptation, water resource management, and environmental prediction. Through reproducible, interdisciplinary research, I aim to make complex models more accessible, explainable, and impactful.
 
-## <h2 style='color:#0077cc;'>Research Interests</h2>
+## <span style='color:#0077cc;'>Research Interests</span>
 
 - **Machine Learning Emulators for Climate Models**  
   I develop deep learning surrogates (e.g., [CNNs](https://www.ibm.com/think/topics/convolutional-neural-networks), [LSTMs](https://developer.nvidia.com/discover/lstm)) to emulate complex climate simulations such as CLM5. These models significantly reduce computational costs while maintaining physical fidelity, enabling faster and scalable climate scenario analysis.

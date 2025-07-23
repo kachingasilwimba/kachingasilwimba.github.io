@@ -12,8 +12,8 @@ main:
   # - title: "Talks"
   #   url: /sitemap/
         
-  # - title: "Blog Posts"
-  #   url: /year-archive/
+  - title: "Summer Schools"
+    url: /summerschools/
     
   - title: "Resume"
     url: /cv/

@@ -67,7 +67,6 @@ School: <a href="https://www.sdsc.edu/education/training-programs/CIML.html"
           margin-right:1rem;">
   CIML Summer Institute
 </a>       
-
 Course: <a href="https://github.com/ciml-org/ciml-summer-institute-2023"
    style="display:inline-block;
           color:#0077cc;

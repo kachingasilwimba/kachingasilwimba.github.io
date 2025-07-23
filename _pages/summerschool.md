@@ -5,7 +5,7 @@ permalink: /summerschool/
 author_profile: true
 ---
 
-**URSSI Summer School in Open Science and Research Software Engineering at UIUC**
+**URSSI Summer School in Open Science and Research Software Engineering at UIUC**    
 School: <a href="https://bssw.io/events/urssi-summer-school-in-open-science-and-research-software-engineering-at-uiuc"
    style="display:inline-block;
           color:#0077cc;
@@ -130,7 +130,7 @@ Date: summer, 2022
 - Trust‑a‑Thon Practical Experience
 
 ---
-**Community Terrestrial Systems Model (CTSM)** 
+**Community Terrestrial Systems Model (CTSM)**     
 School: <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
    style="display:inline-block;
           color:#0077cc;
@@ -155,7 +155,7 @@ Date: Winter, 2022
 - Applying reproducible workflows with cloud and version control
 
 ---
-**Weather Research & Forecasting (WRF)** 
+**Weather Research & Forecasting (WRF)**    
 School: <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
    style="display:inline-block;
           color:#0077cc;
@@ -163,7 +163,6 @@ School: <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
           margin-right:1rem;">
   WRF 2022 Tutorial Winter 
 </a>       
-
 Repository: <a href="https://github.com/wrf-model/WRF"
    style="display:inline-block;
           color:#0077cc;

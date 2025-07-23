@@ -1,4 +1,3 @@
-
 ---
 layout: archive
 title: "Selected Summer Schools"

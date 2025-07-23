@@ -2,7 +2,7 @@
 ---
 layout: archive
 title: "Selected Summer Schools"
-permalink: /summerschools/
+permalink: /summerschool/
 author_profile: true
 ---
 

@@ -66,7 +66,7 @@ I am passionate about bridging scientific research with practical solutions, usi
 - **B.Sc. in Physics**  
   [Copperbelt University](https://www.cbu.ac.zm/), Kitwe, Zambia — 2015–2019  
 
-## Recent Updates
+<span style='color:#0077cc;'>Recent Updates</span>
 
 - **June 2025**  
   Awarded the **[AWWA Pacific Northwest Section Scholarship](https://www.pnws-awwa.org/careers/scholarship-application/)** for graduate research excellence in water and climate data science, recognizing leadership in water resource analytics.

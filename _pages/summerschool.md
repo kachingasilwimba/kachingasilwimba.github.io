@@ -54,7 +54,7 @@ author_profile: true
 **Location:** San Diego, CA, USA      
 **Date:** summer, 2023     
 
-- Machine Learning (ML) workflows on High‑Performance Computing (HPC)
+- Machine Learning (ML) workflows on High‑Performance Computing
 - High-Performance Computing and parallel computing concepts  
 - Batch job scheduling and data management on HPC  
 - GPU computing, containerization, and environment provisioning
@@ -90,7 +90,7 @@ author_profile: true
           color:#007bff;
           text-decoration:none;
           margin-right:1rem;">
-  CTSM Tutorial 2022
+  CTSM 2022 Tutorial
 </a>       
 
 **Repository:** <a href="https://github.com/ESCOMP/ctsm"
@@ -108,3 +108,28 @@ author_profile: true
 - Visualizing and analyzing model outputs
 - Modifying and customizing code
 - Applying reproducible workflows with cloud and version control
+
+## Weather Research & Forecasting (WRF) 
+**School:** <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  WRF 2022 Tutorial Winter 
+</a>       
+
+**Repository:** <a href="https://github.com/wrf-model/WRF"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  WRF GitHub Repository
+</a>       
+**Location:** Boulder, CO, USA      
+**Date:** Winter, 2022     
+
+- Compiling and installing WRF & Weather Preprocessing System from source
+- Configuring and running real‑data and idealized case studies
+- Creating nested domains and setting up multi-scale simulations
+- Selecting and implementing physics and dynamics schemes
+- Post‑processing output and visualizing results

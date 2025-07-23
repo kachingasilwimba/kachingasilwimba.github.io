@@ -13,7 +13,7 @@ author_profile: true
           text-decoration:none;
           margin-right:1rem;">
   CIML Summer Institute
-</a>    
+</a>       
 
 **Course:** <a href="https://github.com/ciml-org/ciml-summer-institute-2023"
    style="display:inline-block;
@@ -21,11 +21,11 @@ author_profile: true
           text-decoration:none;
           margin-right:1rem;">
   CIML 2023 Summer Institute Course Outline
-</a>    
+</a>       
 
-**Course Outline** https://github.com/ciml-org/ciml-summer-institute-2023
-**Location:** San Diego, CA, USA    
-**Date:** summer, 2023  
+**Course Outline** https://github.com/ciml-org/ciml-summer-institute-2023  
+**Location:** San Diego, CA, USA      
+**Date:** summer, 2023     
 
 - Machine Learning (ML) workflows on High‑Performance Computing (HPC)
 - High-Performance Computing and parallel computing concepts  

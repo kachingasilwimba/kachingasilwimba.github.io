@@ -13,7 +13,6 @@ author_profile: true
           margin-right:1rem;">
   CIML Summer Institute
 </a>       
-
 **Course:** <a href="https://github.com/si2-urssi"
    style="display:inline-block;
           color:#0077cc;
@@ -43,7 +42,6 @@ author_profile: true
           margin-right:1rem;">
   Momentum Bootcamps
 </a>       
-
 **Course:** <a href="https://github.com/leap-stc/LEAP-bootcamps"
    style="display:inline-block;
           color:#0077cc;
@@ -98,7 +96,6 @@ author_profile: true
           margin-right:1rem;">
   LeaderShape
 </a>       
-   
 **Location:** Cascade, ID, USA      
 **Date:** summer, 2023     
 
@@ -120,7 +117,6 @@ author_profile: true
           margin-right:1rem;">
   TAI4ES 2022 Summer School
 </a>       
-
 **Course:** <a href="https://github.com/ai2es/tai4es-trustathon-2022"
    style="display:inline-block;
           color:#0077cc;
@@ -147,7 +143,6 @@ author_profile: true
           margin-right:1rem;">
   CTSM 2022 Tutorial
 </a>       
-
 **Repository:** <a href="https://github.com/ESCOMP/ctsm"
    style="display:inline-block;
           color:#0077cc;

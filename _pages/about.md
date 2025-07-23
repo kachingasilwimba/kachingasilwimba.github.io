@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About"
+title: "<span style='color:#0077cc;'>About</span>"
 author_profile: true
 redirect_from: 
   - "/wordpress/"
@@ -17,7 +17,7 @@ I place strong emphasis on [interoperability](https://www.ogc.org/about/interope
 
 I am passionate about bridging scientific research with practical solutions, using AI, geospatial modeling, and data engineering to tackle real-world challenges in climate adaptation, water resource management, and environmental prediction. Through reproducible, interdisciplinary research, I aim to make complex models more accessible, explainable, and impactful.
 
-Research Interests
+## Research Interests
 ======
 
 - **Machine Learning Emulators for Climate Models**  
@@ -35,7 +35,7 @@ Research Interests
 - **Hybrid Climate Modeling with AI**  
   I explore integrated modeling approaches that combine physics-based climate models (e.g., CLM5, [WRF](https://www.mmm.ucar.edu/models/wrf)) with machine learning. This hybrid methodology improves prediction reliability and supports actionable insights for climate mitigation and decision-making.
 
-Technical Skills
+## Technical Skills
 ======
 
 - **Programming & Scripting**  
@@ -57,7 +57,7 @@ Technical Skills
   Matplotlib, Cartopy, HoloViews, Plotly, Tableau; experienced in creating insightful and publication-ready graphics for complex scientific data
 
 
-Education
+## Education
 ======
 
 - **Ph.D. in Computing (Data Science)**  
@@ -69,7 +69,7 @@ Education
 - **B.Sc. in Physics**  
   [Copperbelt University](https://www.cbu.ac.zm/), Kitwe, Zambia — 2015–2019  
 
-Recent Updates
+## Recent Updates
 ======
 
 - **June 2025**  
@@ -88,7 +88,7 @@ Recent Updates
   Completed a **Graduate Research Fellowship** at **[NCAR Advanced Study Program](https://edec.ucar.edu/advanced-study-program)**, developing adaptive learning techniques for climate model calibration and evaluation.
 
 
-Awards & Fellowships
+## Awards & Fellowships
 ======
 
 - **2025**  

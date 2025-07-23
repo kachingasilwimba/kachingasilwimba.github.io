@@ -1,8 +1,5 @@
 # main links links
 main:
-  - title: "Summer Schools"
-    url: /summerschool/
-    
   - title: "Publications"
     url: /publications/
 
@@ -12,8 +9,8 @@ main:
   - title: "Talks"
     url: /presentations/
 
-  # - title: "Talks"
-  #   url: /sitemap/
+  - title: "Summer Schools"
+    url: /summerschool/
     
   - title: "Resume"
     url: /cv/

@@ -67,7 +67,7 @@ Date: May 2024
 - Introduced an EDNN-based history matching method that provides richer uncertainty estimates in terrestrial water storage simulations, improving confidence in model outputs.
 
 ---
-**Emulating and Evaluating Uncertainty Estimates in CLM5 Terrestrial Water Storage Simulations Using Evidential Deep Neural Networks**
+**Emulating and Evaluating Uncertainty Estimates in CLM5 Terrestrial Water Storage Simulations Using Evidential Deep Neural Networks**  
 Event: <a href="https://www.cesm.ucar.edu/events/351/agenda"
    style="display:inline-block;
           color:#0077cc;

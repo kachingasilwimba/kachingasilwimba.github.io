@@ -13,7 +13,7 @@ main:
   #   url: /sitemap/
         
   - title: "Summer Schools"
-    url: /summerschools/
+    url: /summerschool/
     
   - title: "Resume"
     url: /cv/

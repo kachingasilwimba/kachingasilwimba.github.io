@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Selected Talks"
+title: "<span style='color:#0077cc;'>Selected Talks</span>"
 permalink: /presentations/
 author_profile: true
 ---
@@ -8,7 +8,7 @@ author_profile: true
 ## Understanding Parameter Uncertainty in CLM5 with Machine Learning for Enhanced Hydrological Predictions  
 **Event:** <a href="https://sites.google.com/boisestate.edu/spuds/home#h.j6w9uj5xhnh"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   The Scientific comPUting and Data Science (SPUDS) Seminar
@@ -25,7 +25,7 @@ author_profile: true
 ## Emulating and Evaluating Uncertainty in CLM5 Simulations Using Evidential Deep Neural Networks  
 **Event:** <a href="https://www.agu.org/annual-meeting-2024"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   American Geophysical Union 2024 Annual Meeting
@@ -39,7 +39,7 @@ author_profile: true
 ## Assessing Soil Hydraulic Parameter Impacts and Performing Uncertainty Quantification in Climate Model Simulations Using Advanced Analytical Techniques  
 **Event:** <a href="https://sites.google.com/boisestate.edu/spuds/home#h.wst0qqe51wrf"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   The Scientific comPUting and Data Science (SPUDS) Seminar
@@ -56,7 +56,7 @@ author_profile: true
 ## History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model  
 **Event:** <a href="https://www.pnnl.gov/events/hydroml-2024-symposium"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   HydroML 2024 Symposium
@@ -70,7 +70,7 @@ author_profile: true
 ## Emulating and Evaluating Uncertainty Estimates in CLM5 Terrestrial Water Storage Simulations Using Evidential Deep Neural Networks  
 **Event:** <a href="https://www.cesm.ucar.edu/events/351/agenda"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   29th Annual CESM Workshop
@@ -84,7 +84,7 @@ author_profile: true
 ## Combining Empirical Orthogonal Functions and Self-Organizing Maps to Understand Soil Parameter Influence in CLM5   
 **Event:** <a href="https://www.boisestate.edu/coen/news-events/annual-design-showcase/"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;"> 
   College of Engineering Fall Design Showcase
@@ -98,7 +98,7 @@ author_profile: true
 ## Assessing the Effect of Soil Parameter Setups on Soil Moisture in CLM5 over the Continental U.S. Using EOF Analysis  
 **Event:** <a href="https://www.boisestate.edu/graduatecollege/showcase/"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;"> 
   Boise State University Graduate Showcase
@@ -112,7 +112,7 @@ author_profile: true
 ## Integrating Empirical Orthogonal Functions into Machine Learning Workflows  
 **Event:** <a href="https://www.boisestate.edu/rcs/research-computing-day/"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;"> 
   Research Computing Days

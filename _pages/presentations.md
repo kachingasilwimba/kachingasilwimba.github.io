@@ -5,7 +5,8 @@ permalink: /presentations/
 author_profile: true
 ---
 
-## Understanding Parameter Uncertainty in CLM5 with Machine Learning for Enhanced Hydrological Predictions  
+**Understanding Parameter Uncertainty in CLM5 with Machine Learning for Enhanced Hydrological Predictions** 
+
 **Event:** <a href="https://sites.google.com/boisestate.edu/spuds/home#h.j6w9uj5xhnh"
    style="display:inline-block;
           color:#0077cc;
@@ -22,7 +23,7 @@ author_profile: true
 - Extended EDNN framework to predict hydrological variables in ungauged basins
   
 ---
-## Emulating and Evaluating Uncertainty in CLM5 Simulations Using Evidential Deep Neural Networks  
+**Emulating and Evaluating Uncertainty in CLM5 Simulations Using Evidential Deep Neural Networks**  
 **Event:** <a href="https://www.agu.org/annual-meeting-2024"
    style="display:inline-block;
           color:#0077cc;
@@ -36,7 +37,8 @@ author_profile: true
 - Presented a novel approach utilizing EDNN to deliver enhanced uncertainty estimates in CLM5 simulations and reduce computational costs.
   
 ---
-## Assessing Soil Hydraulic Parameter Impacts and Performing Uncertainty Quantification in Climate Model Simulations Using Advanced Analytical Techniques  
+**Assessing Soil Hydraulic Parameter Impacts and Performing Uncertainty Quantification in Climate Model Simulations Using Advanced Analytical Techniques**  
+
 **Event:** <a href="https://sites.google.com/boisestate.edu/spuds/home#h.wst0qqe51wrf"
    style="display:inline-block;
           color:#0077cc;
@@ -53,7 +55,8 @@ author_profile: true
 - Tested transferability of methods in CAMELS basins
   
 ---
-## History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model  
+**History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model**  
+
 **Event:** <a href="https://www.pnnl.gov/events/hydroml-2024-symposium"
    style="display:inline-block;
           color:#0077cc;
@@ -67,7 +70,8 @@ author_profile: true
 - Introduced an EDNN-based history matching method that provides richer uncertainty estimates in terrestrial water storage simulations, improving confidence in model outputs.
 
 ---
-## Emulating and Evaluating Uncertainty Estimates in CLM5 Terrestrial Water Storage Simulations Using Evidential Deep Neural Networks  
+**Emulating and Evaluating Uncertainty Estimates in CLM5 Terrestrial Water Storage Simulations Using Evidential Deep Neural Networks**
+
 **Event:** <a href="https://www.cesm.ucar.edu/events/351/agenda"
    style="display:inline-block;
           color:#0077cc;
@@ -81,7 +85,7 @@ author_profile: true
 - Highlighted how pinpointing high-uncertainty regions guides better decision-making and model refinements in climate simulations.
 
 ---
-## Combining Empirical Orthogonal Functions and Self-Organizing Maps to Understand Soil Parameter Influence in CLM5   
+**Combining Empirical Orthogonal Functions and Self-Organizing Maps to Understand Soil Parameter Influence in CLM5**   
 **Event:** <a href="https://www.boisestate.edu/coen/news-events/annual-design-showcase/"
    style="display:inline-block;
           color:#0077cc;
@@ -95,7 +99,7 @@ author_profile: true
 - Applied EOF and SOM analysis to explore relationships between soil properties and moisture dynamics in CLM5.
 
 ---
-## Assessing the Effect of Soil Parameter Setups on Soil Moisture in CLM5 over the Continental U.S. Using EOF Analysis  
+**Assessing the Effect of Soil Parameter Setups on Soil Moisture in CLM5 over the Continental U.S. Using EOF Analysis**  
 **Event:** <a href="https://www.boisestate.edu/graduatecollege/showcase/"
    style="display:inline-block;
           color:#0077cc;
@@ -109,7 +113,7 @@ author_profile: true
 - Demonstrated how different soil parameter configurations alter moisture patterns, informing improvements to model calibration and prediction accuracy.
 
 ---
-## Integrating Empirical Orthogonal Functions into Machine Learning Workflows  
+**Integrating Empirical Orthogonal Functions into Machine Learning Workflows**  
 **Event:** <a href="https://www.boisestate.edu/rcs/research-computing-day/"
    style="display:inline-block;
           color:#0077cc;

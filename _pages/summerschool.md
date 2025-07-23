@@ -84,3 +84,27 @@ author_profile: true
 - Vision Creation & Leading with Integrity
 - Resilience and Managing Uncertainty
 
+## Community Terrestrial Systems Model (CTSM) 
+**School:** <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  CTSM Tutorial 2022
+</a>       
+
+**Repository:** <a href="https://github.com/ESCOMP/ctsm"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  CTSM GitHub Repository
+</a>       
+**Location:** Boulder, CO, USA      
+**Date:** Winter, 2022     
+
+- Setting up and running CTSM simulations
+- Using container-based environments for reproducible experimentation
+- Visualizing and analyzing model outputs
+- Modifying and customizing code
+- Applying reproducible workflows with cloud and version control

@@ -1,6 +1,6 @@
 ---
 permalink: /contact/
-title: "Contact"
+title: "<span style='color:#0077cc;'>Contact</span>"
 author_profile: true
 ---
 Below is my contact information and links to various platforms where my work and research appear. This makes it easier for people to find the correct pages when searching for “Kachinga Silwimba” or related profiles.

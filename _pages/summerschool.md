@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 ## Cyberinfrastructure-Enabled Machine Learning (CIML) Summer Institute  
-**Event:** <a href="https://www.sdsc.edu/education/training-programs/CIML.html"
+**School:** <a href="https://www.sdsc.edu/education/training-programs/CIML.html"
    style="display:inline-block;
           color:#007bff;
           text-decoration:none;

@@ -8,7 +8,7 @@ author_profile: true
 ## URSSI Summer School in Open Science and Research Software Engineering at UIUC
 **School:** <a href="https://bssw.io/events/urssi-summer-school-in-open-science-and-research-software-engineering-at-uiuc"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   CIML Summer Institute
@@ -16,7 +16,7 @@ author_profile: true
 
 **Course:** <a href="https://github.com/si2-urssi"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   URSSI 2024 Summer School Course Outline
@@ -39,7 +39,7 @@ author_profile: true
 ## Cyberinfrastructure-Enabled Machine Learning (CIML) Summer Institute  
 **School:** <a href="https://www.sdsc.edu/education/training-programs/CIML.html"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   CIML Summer Institute
@@ -47,7 +47,7 @@ author_profile: true
 
 **Course:** <a href="https://github.com/ciml-org/ciml-summer-institute-2023"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   CIML 2023 Summer Institute Course Outline
@@ -69,7 +69,7 @@ author_profile: true
 ## The LeaderShape Institute  
 **School:** <a href="https://leadershape.org/"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   LeaderShape
@@ -91,7 +91,7 @@ author_profile: true
 ## Trustworthy Artificial Intelligence for Environmental Science  
 **School:** <a href="https://www.cisl.ucar.edu/events/tai4es-2022-summer-school"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   TAI4ES 2022 Summer School
@@ -99,7 +99,7 @@ author_profile: true
 
 **Course:** <a href="https://github.com/ai2es/tai4es-trustathon-2022"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   TAI4ES Hackathon
@@ -118,7 +118,7 @@ author_profile: true
 ## Community Terrestrial Systems Model (CTSM) 
 **School:** <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   CTSM 2022 Tutorial
@@ -126,7 +126,7 @@ author_profile: true
 
 **Repository:** <a href="https://github.com/ESCOMP/ctsm"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   CTSM GitHub Repository
@@ -145,7 +145,7 @@ author_profile: true
 ## Weather Research & Forecasting (WRF) 
 **School:** <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   WRF 2022 Tutorial Winter 
@@ -153,7 +153,7 @@ author_profile: true
 
 **Repository:** <a href="https://github.com/wrf-model/WRF"
    style="display:inline-block;
-          color:#007bff;
+          color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
   WRF GitHub Repository

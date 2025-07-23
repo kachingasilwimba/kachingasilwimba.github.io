@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Selected Summer Schools"
+title: "<span style='color:#0077cc;'>Selected Summer Schools</span>"
 permalink: /summerschool/
 author_profile: true
 ---

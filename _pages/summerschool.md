@@ -32,7 +32,33 @@ author_profile: true
 - Documentation and licensing
 - Reproducibility and open science practices
 - Release and deployment best practice
-- Use of open tools and open results 
+- Use of open tools and open results
+
+---
+## Learning the Earth with Artificial Intelligence and Physics (LEAP)
+**School:** <a href="https://leap.columbia.edu/education/bootcamp/"
+   style="display:inline-block;
+          color:#0077cc;
+          text-decoration:none;
+          margin-right:1rem;">
+  Momentum Bootcamps
+</a>       
+
+**Course:** <a href="https://github.com/leap-stc/LEAP-bootcamps"
+   style="display:inline-block;
+          color:#0077cc;
+          text-decoration:none;
+          margin-right:1rem;">
+  Climate Data Science Course Outline
+</a>       
+**Location:** New York, NY, USA      
+**Date:** Winter, 2024     
+
+- Exploring and Accessing Climate Data
+- Computing Climate Statistics and Diagnostics
+- Interactive Data Visualization
+- Machine Learning on Spatio‑Temporal Climate Data
+- Reproducible Computing and Cloud Collaboration
 
 ---
 
@@ -60,8 +86,6 @@ author_profile: true
 - Batch job scheduling and data management on HPC  
 - GPU computing, containerization, and environment provisioning
 - Scalable ML and deep learning techniques (including LLM inference)
-- Hands-on Tutorial Experience
-- One‑on‑One Expert Consultation
 - Team-Based Training Projects 
   
 ---

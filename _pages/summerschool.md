@@ -18,7 +18,7 @@ Course: <a href="https://github.com/si2-urssi"
           color:#0077cc;
           text-decoration:none;
           margin-right:1rem;">
-  URSSI 2024 Summer School Course Outline
+  URSSI 2024 Summer School  
 </a>       
 Location: Urbana-Champaign, IL, USA      
 Date: summer, 2024     

@@ -18,7 +18,6 @@ I place strong emphasis on [interoperability](https://www.ogc.org/about/interope
 I am passionate about bridging scientific research with practical solutions, using AI, geospatial modeling, and data engineering to tackle real-world challenges in climate adaptation, water resource management, and environmental prediction. Through reproducible, interdisciplinary research, I aim to make complex models more accessible, explainable, and impactful.
 
 ## Research Interests
-======
 
 - **Machine Learning Emulators for Climate Models**  
   I develop deep learning surrogates (e.g., [CNNs](https://www.ibm.com/think/topics/convolutional-neural-networks), [LSTMs](https://developer.nvidia.com/discover/lstm)) to emulate complex climate simulations such as CLM5. These models significantly reduce computational costs while maintaining physical fidelity, enabling faster and scalable climate scenario analysis.
@@ -36,7 +35,6 @@ I am passionate about bridging scientific research with practical solutions, usi
   I explore integrated modeling approaches that combine physics-based climate models (e.g., CLM5, [WRF](https://www.mmm.ucar.edu/models/wrf)) with machine learning. This hybrid methodology improves prediction reliability and supports actionable insights for climate mitigation and decision-making.
 
 ## Technical Skills
-======
 
 - **Programming & Scripting**  
   Python (NumPy, Pandas, SciPy, Xarray), R, MATLAB, Java, Scala, PySpark, Bash, SQL
@@ -58,7 +56,6 @@ I am passionate about bridging scientific research with practical solutions, usi
 
 
 ## Education
-======
 
 - **Ph.D. in Computing (Data Science)**  
   [Boise State University](https://www.boisestate.edu/), Boise, ID, USA — Expected Fall 2025  
@@ -70,7 +67,6 @@ I am passionate about bridging scientific research with practical solutions, usi
   [Copperbelt University](https://www.cbu.ac.zm/), Kitwe, Zambia — 2015–2019  
 
 ## Recent Updates
-======
 
 - **June 2025**  
   Awarded the **[AWWA Pacific Northwest Section Scholarship](https://www.pnws-awwa.org/careers/scholarship-application/)** for graduate research excellence in water and climate data science, recognizing leadership in water resource analytics.
@@ -89,7 +85,6 @@ I am passionate about bridging scientific research with practical solutions, usi
 
 
 ## Awards & Fellowships
-======
 
 - **2025**  
   - AWWA Pacific Northwest Scholarship Recipient   

@@ -64,5 +64,23 @@ author_profile: true
 - Team-Based Training Projects 
   
 
+## The LeaderShape Institute  
+**School:** <a href="https://leadershape.org/"
+   style="display:inline-block;
+          color:#007bff;
+          text-decoration:none;
+          margin-right:1rem;">
+  LeaderShape
+</a>       
+   
+**Location:** Cascade, ID, USA      
+**Date:** summer, 2023     
 
+- Working in High‑Performance Teams
+- Dealing with Change and Chaos
+- Ethical Decision‑Making
+- Self-efficacy and Leadership Confidence
+- Understanding Personal Values and the Values of Others
+- Vision Creation & Leading with Integrity
+- Resilience and Managing Uncertainty
 

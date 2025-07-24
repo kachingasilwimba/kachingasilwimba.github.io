@@ -9,7 +9,7 @@ main:
   - title: "Talks"
     url: /presentations/
 
- - title: "Zenodo"
+  - title: "Zenodo"
     url: /zenodo/
 
   - title: "Summer Schools"

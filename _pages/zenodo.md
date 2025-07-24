@@ -17,6 +17,8 @@ author_profile: true
 
 [Zenodo](https://zenodo.org/records/15078448){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
+["spmip-eof-analysis: CLM5 SPMIP EOF Analysis"](https://zenodo.org/records/14888812)  
 
+[Zenodo](https://zenodo.org/records/14888812){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
 

@@ -13,5 +13,10 @@ author_profile: true
 [Zenodo](https://zenodo.org/records/15170936){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
 
+["Soil Moisture Data Subset from the Community Land Model Version 5 (CLM5) for the Soil Parameter Model Intercomparison Project (SP-MIP) over the Continental United States (CONUS), 1980-2010"](https://zenodo.org/records/15078448)  
+
+[Zenodo](https://zenodo.org/records/15078448){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
+
+
 
 

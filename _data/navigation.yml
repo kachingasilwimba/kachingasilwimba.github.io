@@ -9,12 +9,12 @@ main:
   - title: "Talks"
     url: /presentations/
 
+ - title: "Zenodo"
+    url: /zenodo/
+
   - title: "Summer Schools"
     url: /summerschool/
 
-  - title: "Zenodo"
-    url: /zenodo/
-    
   - title: "Resume"
     url: /cv/
   

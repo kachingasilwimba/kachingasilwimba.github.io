@@ -8,7 +8,8 @@ author_profile: true
 {% include base_path %}
 
 ### 2025
-["Global Total Projected Leaf Area Index Subset from the Community Land Model Version 5 (CLM5) Perturbed Parameter Ensemble Members, 1850-2015"](https://zenodo.org/records/15170936)
+["Global Total Projected Leaf Area Index Subset from the Community Land Model Version 5 (CLM5) Perturbed Parameter Ensemble Members, 1850-2015"](https://zenodo.org/records/15170936)  
+
 [Zenodo](https://zenodo.org/records/15170936){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
 

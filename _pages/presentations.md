@@ -21,7 +21,8 @@ Date: February 18, 2025
 - Quantified epistemic and aleatoric uncertainties in LAI via EDNNs  
 - Extended EDNN framework to predict hydrological variables in ungauged basins
   
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Emulating and Evaluating Uncertainty in CLM5 Simulations Using Evidential Deep Neural Networks**  
 Event: <a href="https://www.agu.org/annual-meeting-2024"
    style="display:inline-block;
@@ -35,7 +36,8 @@ Date: December 2024
 
 - Presented a novel approach utilizing EDNN to deliver enhanced uncertainty estimates in CLM5 simulations and reduce computational costs.
   
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Assessing Soil Hydraulic Parameter Impacts and Performing Uncertainty Quantification in Climate Model Simulations Using Advanced Analytical Techniques**  
 Event: <a href="https://sites.google.com/boisestate.edu/spuds/home#h.wst0qqe51wrf"
    style="display:inline-block;

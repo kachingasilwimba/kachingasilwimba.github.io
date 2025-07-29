@@ -15,7 +15,8 @@ This article presents a significant advancement in LAI simulation through eviden
 
 [Read on SIAM News](https://www.siam.org/publications/siam-news/articles/enhancing-leaf-area-index-simulations-with-evidential-deep-learning-a-probabilistic-approach-to-uncertainty-and-sensitivity/){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
----  
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Impact of Soil Hydraulic Parameter Variability on Soil Moisture: An Empirical Orthogonal Function Analysis**   
 Published: February 6, 2025  
 
@@ -24,7 +25,8 @@ This article employs Empirical Orthogonal Function (EOF) analysis to elucidate h
 
 [Read on SIAM News](https://www.siam.org/publications/siam-news/articles/impact-of-soil-hydraulic-parameter-variability-on-soil-moisture-an-empirical-orthogonal-function-analysis){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
----  
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Can Foot-Flush Reduce Cholera Spreading?**   
 Published: December 5, 2024  
 
@@ -33,7 +35,8 @@ Drawing on my undergraduate thesis, I proposed a foot-operated toilet valve to r
 
 [Read on Zambia Daily Mail](https://www.daily-mail.co.zm/2024/12/05/can-foot-flush-reduce-cholera-spreading/){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
---- 
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Africa Needs More Investment in Climate Action**   
 Published: December 3, 2024  
 
@@ -42,7 +45,8 @@ Highlighting a US$52.7 billion annual funding gap for adaptation, Kachinga Silwi
 
 [Read on Zambia Daily Mail](https://www.daily-mail.co.zm/2024/12/03/africa-needs-more-investment-in-climate-action/){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Efficient Analysis of Large Climate Datasets**  
 Published: November 29, 2023  
 

@@ -11,6 +11,8 @@ redirect_from:
 
 I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise State University](https://www.boisestate.edu/), specializing in [artificial intelligence (AI)](https://en.wikipedia.org/wiki/Artificial_intelligence), [machine learning](https://en.wikipedia.org/wiki/Machine_learning), [high-performance computing (HPC)](https://www.ibm.com/think/topics/hpc), hydrology, and [climate data science](https://climate.nasa.gov/). My research develops scalable AI and  deep learning models for [computer vision](https://www.ibm.com/think/topics/computer-vision) and Earth system simulations, with a focus on [uncertainty quantification](https://en.wikipedia.org/wiki/Uncertainty_quantification) and efficient emulation of physics models like [CLM5](https://www.cesm.ucar.edu/models/clm). I prioritize [interoperability](https://www.ogc.org/about/interoperability/), ensuring that tools, data, and models integrate smoothly across disciplines. I build reproducible workflows and modular machine learning surrogates that support open, collaborative science. Driven by real-world impact, my work bridges the fields of AI and environmental research to address challenges in climate resilience and water resource management.
 
+<hr style="border:0; height:2px; background:#3498db;">
+
 ## <span style='color:#0077cc;'>Research Interests</span>
 
 - **Machine Learning Emulators for Climate Models**  
@@ -27,6 +29,8 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 
 - **Hybrid Climate Modeling with AI**  
   I explore integrated modeling approaches that combine physics-based climate models (e.g., CLM5, [WRF](https://www.mmm.ucar.edu/models/wrf)) with machine learning. This hybrid methodology improves prediction reliability and supports actionable insights for climate mitigation and decision-making.
+
+<hr style="border:0; height:2px; background:#3498db;">
 
 ## <span style='color:#0077cc;'>Technical Skills</span>
 
@@ -48,6 +52,7 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 - **Data Visualization**  
   Matplotlib, Cartopy, HoloViews, Plotly, Tableau; experienced in creating insightful and publication-ready graphics for complex scientific data
 
+<hr style="border:0; height:2px; background:#3498db;">
 
 ## <span style='color:#0077cc;'>Education</span>
 
@@ -58,7 +63,9 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
   [African Institute for Mathematical Sciences (AIMS)](https://aims.ac.rw/), Kigali, Rwanda — 2020–2021  
 
 - **B.Sc. in Physics**  
-  [Copperbelt University](https://www.cbu.ac.zm/), Kitwe, Zambia — 2015–2019  
+  [Copperbelt University](https://www.cbu.ac.zm/), Kitwe, Zambia — 2015–2019
+
+<hr style="border:0; height:2px; background:#3498db;">
 
 ## <span style='color:#0077cc;'>Recent Updates</span>
 
@@ -77,6 +84,7 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 - **June 2024**  
   Completed a **Graduate Research Fellowship** at **[NCAR Advanced Study Program](https://edec.ucar.edu/advanced-study-program)**, developing adaptive learning techniques for climate model calibration and evaluation.
 
+<hr style="border:0; height:2px; background:#3498db;">
 
 ## <span style='color:#0077cc;'>Awards & Fellowships</span>
 

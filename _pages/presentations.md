@@ -53,8 +53,9 @@ Date: October 22, 2024
 - Clustered EOF modes by soil texture and climate via SOM  
 - Captured aleatoric & epistemic uncertainties in perturbed ensembles using EDNNs  
 - Tested transferability of methods in CAMELS basins
+
+<hr style="border:0; height:2px; background:#3498db;">
   
----
 **History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model**  
 Event: <a href="https://www.pnnl.gov/events/hydroml-2024-symposium"
    style="display:inline-block;
@@ -68,7 +69,8 @@ Date: May 2024
 
 - Introduced an EDNN-based history matching method that provides richer uncertainty estimates in terrestrial water storage simulations, improving confidence in model outputs.
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Emulating and Evaluating Uncertainty Estimates in CLM5 Terrestrial Water Storage Simulations Using Evidential Deep Neural Networks**  
 Event: <a href="https://www.cesm.ucar.edu/events/351/agenda"
    style="display:inline-block;
@@ -82,7 +84,8 @@ Date: June 2024
 
 - Highlighted how pinpointing high-uncertainty regions guides better decision-making and model refinements in climate simulations.
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Combining Empirical Orthogonal Functions and Self-Organizing Maps to Understand Soil Parameter Influence in CLM5**   
 Event: <a href="https://www.boisestate.edu/coen/news-events/annual-design-showcase/"
    style="display:inline-block;
@@ -96,7 +99,8 @@ Date: November 2023
 
 - Applied EOF and SOM analysis to explore relationships between soil properties and moisture dynamics in CLM5.
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Assessing the Effect of Soil Parameter Setups on Soil Moisture in CLM5 over the Continental U.S. Using EOF Analysis**  
 Event: <a href="https://www.boisestate.edu/graduatecollege/showcase/"
    style="display:inline-block;
@@ -110,7 +114,8 @@ Date: April 2023
 
 - Demonstrated how different soil parameter configurations alter moisture patterns, informing improvements to model calibration and prediction accuracy.
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Integrating Empirical Orthogonal Functions into Machine Learning Workflows**  
 Event: <a href="https://www.boisestate.edu/rcs/research-computing-day/"
    style="display:inline-block;

@@ -33,7 +33,8 @@ Date: summer, 2024
 - Release and deployment best practice
 - Use of open tools and open results
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Learning the Earth with Artificial Intelligence and Physics (LEAP)**  
 School: <a href="https://leap.columbia.edu/education/bootcamp/"
    style="display:inline-block;
@@ -58,7 +59,8 @@ Date: Winter, 2024
 - Machine Learning on Spatio‑Temporal Climate Data
 - Reproducible Computing and Cloud Collaboration
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Cyberinfrastructure-Enabled Machine Learning (CIML) Summer Institute**  
 School: <a href="https://www.sdsc.edu/education/training-programs/CIML.html"
    style="display:inline-block;
@@ -84,7 +86,8 @@ Date: summer, 2023
 - Scalable ML and deep learning techniques (including LLM inference)
 - Team-Based Training Projects 
   
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **The LeaderShape Institute**  
 School: <a href="https://leadershape.org/"
    style="display:inline-block;
@@ -104,7 +107,8 @@ Date: summer, 2023
 - Vision Creation & Leading with Integrity
 - Resilience and Managing Uncertainty
   
-----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Trustworthy Artificial Intelligence (AI) for Environmental Science**  
 School: <a href="https://www.cisl.ucar.edu/events/tai4es-2022-summer-school"
    style="display:inline-block;
@@ -129,7 +133,8 @@ Date: summer, 2022
 - Ethics & Trust Integration
 - Trust‑a‑Thon Practical Experience
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Community Terrestrial Systems Model (CTSM)**     
 School: <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
    style="display:inline-block;
@@ -154,7 +159,8 @@ Date: Winter, 2022
 - Modifying and customizing code
 - Applying reproducible workflows with cloud and version control
 
----
+<hr style="border:0; height:2px; background:#3498db;">
+
 **Weather Research & Forecasting (WRF)**    
 School: <a href="https://www.cesm.ucar.edu/events/tutorials/ctsm/2022"
    style="display:inline-block;

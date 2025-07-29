@@ -14,7 +14,6 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 <hr style="border:0; height:2px; background:#3498db;">
 
 ## <span style='color:#0077cc;'>Research Interests</span>
-<hr style="border:0; height:2px; background:#3498db;">
 
 - **Machine Learning Emulators for Climate Models**  
   I develop deep learning surrogates (e.g., [CNNs](https://www.ibm.com/think/topics/convolutional-neural-networks), [LSTMs](https://developer.nvidia.com/discover/lstm)) to emulate complex climate simulations such as CLM5. These models significantly reduce computational costs while maintaining physical fidelity, enabling faster and scalable climate scenario analysis.

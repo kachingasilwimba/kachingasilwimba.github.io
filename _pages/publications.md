@@ -18,7 +18,7 @@ author_profile: true
 * **K. Silwimba**, A.N. Flores, I. Cionni, S.A. Billings, P.L. Sullivan, H. Ajami et al.  
 ["Soil Parameterization in Land Surface Models Drives Large Discrepancies in Soil Moisture Predictions Across Hydrologically Complex Regions of the Contiguous United States"](https://scholar.google.com/scholar?q=Soil+Parameterization+in+Land+Surface+Models+Drives+Large+Discrepancies+in+Soil+Moisture+Predictions), EGUsphere, 1–36  
 [Paper](https://scholar.google.com/scholar?q=Soil+Parameterization+in+Land+Surface+Models+Drives+Large+Discrepancies+in+Soil+Moisture+Predictions){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
-
+<hr style="border:0; height:2px; background:#3498db;">
 ### 2024
 * **K. Silwimba**, A.N. Flores, C. Becker, L.R. Hawkins, K. Dagon & I. Cionni  
 ["History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model"](https://scholar.google.com/scholar?q=History+Matching+with+Evidential+Deep+Neural+Networks+to+Improve+Terrestrial+Water+Storage+Simulations+in+Community+Land+Model), AGU Fall Meeting Abstracts, GC11T-0152  
@@ -31,7 +31,7 @@ author_profile: true
 * S. Akor, **K. Silwimba**, A.N. Flores  
 ["Deep Learning Approach to Predict Snow Water Equivalent from Atmospheric Forcings"](https://scholar.google.com/scholar?q=Deep+Learning+Approach+to+Predict+Snow+Water+Equivalent+from+Atmospheric+Forcings), Authorea Preprints  
 [Paper](https://scholar.google.com/scholar?q=Deep+Learning+Approach+to+Predict+Snow+Water+Equivalent+from+Atmospheric+Forcings){: style="background-color:#007acc;color:#fff;" class="btn mr-4"}
-
+<hr style="border:0; height:2px; background:#3498db;">
 ### 2023
 * E. Malichi, M. Ndengo, D. Mukonda, S. Kiilu, D. Azamuke, **K. Silwimba**  
 ["Fitting Rwanda’s Currency Market Returns with the Poisson Compound Model with Normal Inverse Gaussian Jumps"](https://scholar.google.com/scholar?q=Fitting+Rwanda%E2%80%99s+Currency+Market+Returns+Poisson+Compound+Model+Normal+Inverse+Gaussian+Jumps), Journal of Financial Risk Management, 12(4), 388–404  

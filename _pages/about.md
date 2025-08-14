@@ -59,7 +59,7 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 - **Ph.D. in Computing (Data Science)**  
   [Boise State University](https://www.boisestate.edu/), Boise, ID, USA — Expected Fall 2025  
 
-- **M.Sc. in Mathematical Sciences (Climate Data Science)**  
+- **M.Sc. in Mathematical Sciences (Data Science)**  
   [African Institute for Mathematical Sciences (AIMS)](https://aims.ac.rw/), Kigali, Rwanda — 2020–2021  
 
 - **B.Sc. in Physics**  
@@ -100,7 +100,7 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 - **2021**  
   - [Boise State GEM Scholarship](https://www.boisestate.edu/graduatecollege/funding/merit-based-gem-scholarship/) – Merit-based graduate award  
   - Graduate Assistantship – Research funding from Boise State University  
-  - AIMS Master's Scholarship (Mastercard Foundation) – Full scholarship for climate-focused graduate studies
+  - AIMS Master's Scholarship – Full scholarship for climate-focused graduate studies
 
 - **2015**  
   - Zambia National Merit Scholarship – Full undergraduate scholarship based on academic excellence at Copperbelt University

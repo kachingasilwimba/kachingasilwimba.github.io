@@ -69,6 +69,9 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 
 ## <span style='color:#0077cc;'>Recent Updates</span>
 
+- **September 2025**   
+  CISL Visiting Scholar in the **[Computational and Information Systems Laboratory (CISL)](https://www.cisl.ucar.edu/)** at the **[NSF National Center for Atmospheric Research](https://ncar.ucar.edu/).** 
+
 - **June 2025**  
   Awarded the **[AWWA Pacific Northwest Section Scholarship](https://www.pnws-awwa.org/careers/scholarship-application/)** for graduate research excellence in water and climate data science, recognizing leadership in water resource analytics.
 
@@ -88,7 +91,7 @@ I am a data scientist and Ph.D. candidate in Computing (Data Science) at [Boise 
 
 ## <span style='color:#0077cc;'>Awards & Fellowships</span>
 
-- **2025**  
+- **2025**
   - AWWA Pacific Northwest Scholarship Recipient   
   - [NCAR CESM Tutorial](https://www.cesm.ucar.edu/events/tutorials/cesm) Travel Award – Funding for advanced CESM model training
 

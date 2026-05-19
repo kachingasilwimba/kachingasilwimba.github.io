@@ -9,30 +9,35 @@ redirect_from:
 
 {% include base_path %}
 
-I am a data scientist and Ph.D. candidate in Computing, with a concentration in Data Science, at [Boise State University](https://www.boisestate.edu/). My work focuses on artificial intelligence, machine learning, high-performance computing, hydrology, and climate data science.
+I am a data scientist with a Ph.D. in Computing, with a concentration in Data Science, from the [School of Computing](https://www.boisestate.edu/computing/) at [Boise State University](https://www.boisestate.edu/). My expertise spans artificial intelligence, machine learning, data engineering, high-performance computing, statistical modeling, and large-scale data analytics.
 
-My research develops scalable machine learning and deep learning methods for Earth system modeling, with an emphasis on uncertainty quantification, interpretable AI, and efficient emulation of physics-based models such as [CLM5](https://www.cesm.ucar.edu/models/clm). I build reproducible and interoperable workflows that integrate large-scale environmental data, numerical simulations, and machine-learning surrogates to support open and collaborative science.
+My research focuses on developing scalable machine learning and deep learning methods for complex scientific systems, including Earth system and hydrological modeling. This work involves building end-to-end data workflows, designing reproducible pipelines, training and evaluating predictive models, managing large multidimensional datasets, and developing machine learning surrogates that improve computational efficiency and decision support.
 
-Broadly, my work sits at the intersection of AI, hydrology, and decision support. I am especially interested in using data-driven methods to improve climate resilience, water resource management, hazard mitigation, and risk-informed planning.
+While my applied research is rooted in climate and environmental science, the technical foundation of my work is highly transferable. I am interested in data science, data engineering, and machine learning engineering roles where I can apply my experience in Python, machine learning, big data processing, cloud and HPC environments, model development, and scalable analytics to solve real-world problems across domains.
 
 <hr style="border:0; height:2px; background:#3498db;">
 
-## <span style='color:#0077cc;'>Research Interests</span>
 
-- **Machine Learning Emulators for Earth System Models**  
-  I develop machine learning and deep learning surrogates to emulate computationally expensive climate and land surface simulations, including models such as CLM5. These approaches reduce computational cost while supporting faster climate scenario analysis, model calibration, and large-scale experimentation.
 
-- **Uncertainty Quantification & Interpretable AI**  
-  I apply uncertainty-aware learning methods, including evidential deep learning, to improve the reliability of predictions in climate and hydrological modeling. I also use interpretability tools such as SHAP and sensitivity analysis to better understand model behavior and support scientifically transparent decision-making.
+## <span style='color:#0077cc;'>Research & Technical Interests</span>
 
-- **Geospatial and Spatiotemporal Pattern Analysis**  
-  My work includes identifying, clustering, and analyzing spatial and temporal climate patterns using statistical learning, self-organizing maps, empirical orthogonal functions, and scalable Python workflows. These methods help detect climate anomalies, evaluate model performance, and extract meaningful structure from high-dimensional Earth system data.
+- **Machine Learning and Predictive Modeling**  
+  I develop machine learning and deep learning models for complex, data-intensive systems, with experience in supervised learning, neural networks, uncertainty-aware modeling, and model evaluation. My work includes building scalable predictive models that support scientific discovery, operational decision-making, and real-world analytics.
 
-- **High-Performance Computing and Big Data Workflows**  
-  I design and optimize large-scale environmental data workflows using tools such as Python, Xarray, Dask, Slurm, Docker, Singularity, and GPU-accelerated computing. My work emphasizes reproducibility, scalability, efficient memory use, and automation across multi-node computing environments.
+- **Machine Learning Emulators for Scientific and Physical Systems**  
+  I design machine learning surrogates to emulate computationally expensive simulations, including Earth system and land surface models such as CLM5. These approaches reduce computational cost, accelerate experimentation, and enable faster scenario analysis, calibration, and sensitivity testing.
 
-- **Hybrid AI-Physics Climate Modeling**  
-  I am interested in hybrid modeling approaches that combine physics-based simulations with machine learning. These methods can improve computational efficiency, preserve scientific consistency, and provide actionable insights for climate resilience, water resources, and environmental risk assessment.
+- **Uncertainty Quantification and Interpretable AI**  
+  I apply uncertainty-aware learning methods, including evidential deep learning, to improve the reliability and trustworthiness of model predictions. I also use interpretability and sensitivity analysis techniques, such as SHAP and feature attribution methods, to better understand model behavior and support transparent decision-making.
+
+- **Data Engineering and Scalable Analytics Workflows**  
+  I design reproducible data pipelines and large-scale analytics workflows for high-dimensional scientific and operational datasets. My work emphasizes automation, data quality, scalability, efficient memory use, and integration of tools such as Python, Xarray, Dask, Spark, Slurm, Docker, Singularity, and cloud/HPC environments.
+
+- **Geospatial and Spatiotemporal Data Science**  
+  I analyze spatial and temporal patterns in large environmental datasets using statistical learning, clustering, self-organizing maps, empirical orthogonal functions, and scalable Python workflows. These methods support anomaly detection, pattern discovery, model validation, and decision-support applications.
+
+- **Hybrid AI-Physics Modeling and Decision Support**  
+  I am interested in approaches that combine physics-based models, machine learning, and data-driven analytics to improve prediction reliability and computational efficiency. My broader goal is to build models and systems that translate complex data into actionable insights for climate resilience, water resources, risk assessment, and other applied domains.
 
 <hr style="border:0; height:2px; background:#3498db;">
 
@@ -67,7 +72,7 @@ Broadly, my work sits at the intersection of AI, hydrology, and decision support
 - **M.Sc. in Mathematical Sciences, Data Science Concentration**  
   [African Institute for Mathematical Sciences](https://aims.ac.rw/), Kigali, Rwanda — 2020–2021  
 
-- **B.Sc. in Physics**  
+- **B.Sc. in Physics, Computational Physics**  
   [Copperbelt University](https://www.cbu.ac.zm/), Kitwe, Zambia — 2015–2019
 
 <hr style="border:0; height:2px; background:#3498db;">

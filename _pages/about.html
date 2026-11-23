@@ -86,13 +86,24 @@ redirect_from:
 </section>
 
 <section class="shell section about-section" id="about" aria-labelledby="about-title">
-  <figure class="about-portrait"><img src="{{ '/assets/portfolio/portrait.webp' | relative_url }}" alt="Kachinga Silwimba outdoors in a blue winter jacket" width="640" height="800" loading="lazy"></figure>
-  <div>
-    <p class="kicker"><span class="signal" aria-hidden="true"></span> About me</p>
-    <h2 id="about-title">I like problems that need both models and good data.</h2>
-    <p>I trained in physics and mathematical sciences before earning my Ph.D. in Computing. At Boise State and during research appointments at NSF NCAR, I worked on questions where careful data preparation, computation, and model evaluation all matter.</p>
-    <p>I’m interested in industry and research roles in data science, machine learning engineering, and data engineering, including problems outside the Earth sciences.</p>
-    <div class="resource-links"><a href="{{ '/cv/' | relative_url }}">Experience and education</a><a href="{{ '/presentations/' | relative_url }}">Talks</a><a href="{{ '/zenodo/' | relative_url }}">Data and software</a></div>
+  <div class="about-profile">
+    <div class="about-copy">
+      <h2 id="about-title">Professional background</h2>
+      <p>I hold a Ph.D. in Computing with a concentration in Data Science from Boise State University, an M.Sc. in Mathematical Sciences from the African Institute for Mathematical Sciences, and a B.Sc. in Physics from Copperbelt University.</p>
+      <p>At Boise State and during research appointments at the NSF National Center for Atmospheric Research, I built reproducible data workflows and developed machine learning models for land-surface and hydrological simulations. I evaluated predictive accuracy and uncertainty on held-out data and tested how well models transferred across river basins.</p>
+
+      <div class="about-interests">
+        <h3>Career interests</h3>
+        <p>I am interested in industry and research roles in data science, machine learning engineering, and data engineering, including opportunities beyond the Earth sciences.</p>
+      </div>
+
+      <nav class="resource-links about-resources" aria-label="Professional resources">
+        <a href="{{ '/cv/' | relative_url }}">View résumé</a>
+        <a href="{{ '/presentations/' | relative_url }}">Research talks</a>
+        <a href="{{ '/zenodo/' | relative_url }}">Data and software</a>
+      </nav>
+    </div>
+    <figure class="about-portrait"><img src="{{ '/assets/portfolio/portrait.webp' | relative_url }}" alt="Kachinga Silwimba outdoors in a blue winter jacket" width="640" height="800" loading="lazy"></figure>
   </div>
 </section>
 

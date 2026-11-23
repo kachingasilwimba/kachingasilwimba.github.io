@@ -107,44 +107,32 @@
       credit: Silwimba et al. (2025), Figure 2
       rights: CC BY 4.0
 
-- id: snow
-  topic: Snow and streamflow
+- id: streamflow
+  topic: Streamflow prediction
   area: Mountain hydrology
-  title: Snowpack and streamflow prediction
-  summary: I coauthored a study that combined satellite observations and weather inputs to estimate snow water equivalent. My streamflow research studies how to measure uncertainty in predictions for snow-dominated basins.
-  paper: https://doi.org/10.1175/JHM-D-25-0208.1
+  title: Predicting streamflow in snow-dominated basins
+  summary: I developed an emulator to estimate monthly streamflow anomalies and quantify uncertainty in basins where snowmelt shapes the timing and amount of water available.
+  paper: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
+  paper_label: Read the SIAM article
   links:
-    - label: View the snowpack model code
-      url: https://github.com/stanleyakor1/naoh_mp_swe_emulation
     - label: Read the streamflow preprint
       url: https://doi.org/10.22541/essoar.15003561/v1
   figures:
-    - id: satellite-skill
-      label: Results from Figure 6
-      title: What do satellite observations add?
-      preview: Satellite data and skill
-      image: /assets/portfolio/research/snow-spatial-skill.webp
-      width: 1575
-      height: 795
-      alt: Bar charts show that adding satellite snow cover and vegetation data increases the share of pixels with nonnegative model skill in 2016 and 2017.
-      takeaway: Adding satellite snow cover and vegetation data increased the share of pixels that matched or beat a local mean baseline in both water years, using the Noah-MP simulation as the reference.
-      metric:
-        value: '+9.92'
-        label: Percentage point gain in pixels with nonnegative skill, 2016
-      source: https://doi.org/10.1175/JHM-D-25-0208.1
-      credit: Portfolio chart from Akor et al. (2026), Figure 6 results
-    - id: study-area
+    - id: basins
       label: Figure 1
-      title: Where did we check the snow estimates?
-      preview: Colorado study area
-      image: /assets/portfolio/research/snow-study-domain.webp
-      width: 1440
-      height: 720
-      alt: Three panels locate the study in the western US, show Colorado elevations and SNOTEL stations, and summarize station elevation ranges.
-      takeaway: Snow Telemetry (SNOTEL) stations span a range of elevations across the Colorado Rockies. The map shows where field measurements were available to check the snowpack estimates.
-      source: https://doi.org/10.1175/JHM-D-25-0208.1
-      credit: Akor et al. (2026), J. Hydrometeor., 27(9), 1425–1445, Figure 1
-      rights: © 2026 American Meteorological Society
+      title: Where did we test the emulator?
+      preview: Basin clusters
+      image: /assets/portfolio/research/streamflow-basin-clusters.webp
+      width: 1065
+      height: 1200
+      alt: Map of the western United States marking 69 snow-dominated basins, distinguished by color and shape across six clusters.
+      takeaway: Grouping basins by snow fraction, elevation, vegetation, and subsurface properties let us test whether the emulator could generalize to unfamiliar basin types.
+      metric:
+        value: '69'
+        label: Basins grouped into six clusters
+      source: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
+      credit: Kachinga Silwimba (2026), SIAM News, Figure 1
+      rights: Figure courtesy of the author
     - id: uncertainty
       label: Figure 4
       title: Can uncertainty flag errors before we see them?
@@ -154,8 +142,6 @@
       height: 617
       alt: Two plots compare streamflow error across four basin clusters as predictions are removed. Error falls faster when predictions are filtered by model uncertainty.
       takeaway: Excluding the predictions with the highest model uncertainty lowered the remaining error more than filtering by data variability. This can help flag predictions that warrant a closer look.
-      paper: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
-      paper_label: Read the SIAM article
       source: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
       credit: Kachinga Silwimba (2026), SIAM News, Figure 4
       rights: Figure courtesy of the author

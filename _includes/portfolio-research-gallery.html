@@ -1,61 +1,75 @@
-<div class="research-gallery">
-  <div class="gallery-topics" data-gallery-tabs role="tablist" aria-label="Research topics" hidden>
-    {% for project in site.data.research_gallery %}
-    <button class="gallery-topic" type="button" role="tab" id="gallery-topic-{{ project.id }}" aria-controls="gallery-project-{{ project.id }}">
-      <span>{{ project.topic | escape }}</span>
-      <small>{{ project.area | escape }}</small>
-    </button>
-    {% endfor %}
+<div class="research-gallery" data-research-gallery role="region" aria-roledescription="carousel" aria-label="Research highlights">
+  <div class="gallery-controls" data-gallery-controls hidden>
+    <div class="gallery-playback">
+      <button class="gallery-play" type="button" data-gallery-toggle>Pause rotation</button>
+      <p class="gallery-position" data-gallery-position aria-live="off" aria-atomic="true"></p>
+    </div>
+    <div class="gallery-steps">
+      <button type="button" data-gallery-previous aria-label="Previous research highlight">Previous</button>
+      <button type="button" data-gallery-next aria-label="Next research highlight">Next</button>
+    </div>
+    <div class="gallery-progress" aria-hidden="true"><span data-gallery-progress></span></div>
   </div>
 
-  {% for project in site.data.research_gallery %}
-  <section class="gallery-project" id="gallery-project-{{ project.id }}" aria-labelledby="gallery-title-{{ project.id }}">
-    <header class="gallery-project-header">
-      <h3 id="gallery-title-{{ project.id }}">{{ project.title | escape }}</h3>
-      <p>{{ project.summary | escape }}</p>
-    </header>
-
-    <div class="gallery-figures" data-gallery-tabs role="tablist" aria-label="{{ project.topic | escape }} figures" hidden>
-      {% for figure in project.figures %}
-      <button class="gallery-thumbnail" type="button" role="tab" id="gallery-thumb-{{ project.id }}-{{ figure.id }}" aria-controls="gallery-figure-{{ project.id }}-{{ figure.id }}">
-        <img src="{{ figure.image | relative_url }}" alt="" width="80" height="52" loading="lazy" decoding="async">
-        <span><small>{{ figure.label | escape }}</small><strong>{{ figure.preview | escape }}</strong></span>
+  <div class="gallery-content" data-gallery-content>
+    <div class="gallery-topics" data-gallery-tabs role="tablist" aria-label="Research topics" hidden>
+      {% for project in site.data.research_gallery %}
+      <button class="gallery-topic" type="button" role="tab" id="gallery-topic-{{ project.id }}" aria-controls="gallery-project-{{ project.id }}">
+        <span>{{ project.topic | escape }}</span>
+        <small>{{ project.area | escape }}</small>
       </button>
       {% endfor %}
     </div>
 
-    {% for figure in project.figures %}
-    <div class="gallery-stage" id="gallery-figure-{{ project.id }}-{{ figure.id }}">
-      <figure class="gallery-figure">
-        <div class="gallery-image">
-          <img src="{{ figure.image | relative_url }}" alt="{{ figure.alt | escape }}" width="{{ figure.width }}" height="{{ figure.height }}" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="gallery-credit">
-          <a href="{{ figure.source | escape }}">{{ figure.credit | escape }}</a>
-          {% if figure.rights %}<small>{{ figure.rights | escape }}</small>{% endif %}
-        </figcaption>
-      </figure>
-      <div class="gallery-insight">
-        <p class="kicker">{{ figure.label | escape }}</p>
-        <h4>{{ figure.title | escape }}</h4>
-        <p>{{ figure.takeaway | escape }}</p>
-        {% if figure.metric %}
-        <p class="gallery-metric"><strong>{{ figure.metric.value | escape }}</strong><span>{{ figure.metric.label | escape }}</span></p>
-        {% endif %}
-        <div class="gallery-figure-actions">
-          <a class="button light" href="{{ figure.image | relative_url }}">View full size</a>
-          <a class="gallery-paper-link" href="{{ figure.paper | default: project.paper | escape }}">{{ figure.paper_label | default: "Read the paper" | escape }}</a>
+    {% for project in site.data.research_gallery %}
+    <section class="gallery-project" id="gallery-project-{{ project.id }}" aria-labelledby="gallery-title-{{ project.id }}">
+      <header class="gallery-project-header">
+        <h3 id="gallery-title-{{ project.id }}">{{ project.title | escape }}</h3>
+        <p>{{ project.summary | escape }}</p>
+      </header>
+
+      <div class="gallery-figures" data-gallery-tabs role="tablist" aria-label="{{ project.topic | escape }} figures" hidden>
+        {% for figure in project.figures %}
+        <button class="gallery-thumbnail" type="button" role="tab" id="gallery-thumb-{{ project.id }}-{{ figure.id }}" aria-controls="gallery-figure-{{ project.id }}-{{ figure.id }}">
+          <img src="{{ figure.image | relative_url }}" alt="" width="80" height="52" loading="lazy" decoding="async">
+          <span><small>{{ figure.label | escape }}</small><strong>{{ figure.preview | escape }}</strong></span>
+        </button>
+        {% endfor %}
+      </div>
+
+      {% for figure in project.figures %}
+      <div class="gallery-stage" id="gallery-figure-{{ project.id }}-{{ figure.id }}">
+        <figure class="gallery-figure">
+          <div class="gallery-image">
+            <img src="{{ figure.image | relative_url }}" alt="{{ figure.alt | escape }}" width="{{ figure.width }}" height="{{ figure.height }}" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="gallery-credit">
+            <a href="{{ figure.source | escape }}">{{ figure.credit | escape }}</a>
+            {% if figure.rights %}<small>{{ figure.rights | escape }}</small>{% endif %}
+          </figcaption>
+        </figure>
+        <div class="gallery-insight">
+          <p class="kicker">{{ figure.label | escape }}</p>
+          <h4>{{ figure.title | escape }}</h4>
+          <p>{{ figure.takeaway | escape }}</p>
+          {% if figure.metric %}
+          <p class="gallery-metric"><strong>{{ figure.metric.value | escape }}</strong><span>{{ figure.metric.label | escape }}</span></p>
+          {% endif %}
+          <div class="gallery-figure-actions">
+            <a class="button light" href="{{ figure.image | relative_url }}">View full size</a>
+            <a class="gallery-paper-link" href="{{ project.paper | escape }}">{{ project.paper_label | default: "Read the paper" | escape }}</a>
+          </div>
         </div>
       </div>
-    </div>
-    {% endfor %}
-
-    <nav class="gallery-resources resource-links" aria-label="{{ project.topic | escape }} resources">
-      {% for link in project.links %}
-      <a href="{{ link.url | escape }}">{{ link.label | escape }}</a>
       {% endfor %}
-    </nav>
-  </section>
-  {% endfor %}
+
+      <nav class="gallery-resources resource-links" aria-label="{{ project.topic | escape }} resources">
+        {% for link in project.links %}
+        <a href="{{ link.url | escape }}">{{ link.label | escape }}</a>
+        {% endfor %}
+      </nav>
+    </section>
+    {% endfor %}
+  </div>
 </div>
 <script defer src="{{ '/assets/portfolio/research-gallery.js' | relative_url }}"></script>

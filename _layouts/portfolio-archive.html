@@ -1,0 +1,12 @@
+---
+layout: portfolio
+---
+<div class="page-shell">
+  <header class="page-head">
+    <h1>{{ page.title | escape }}</h1>
+    <nav class="page-jump" aria-label="Research resources"><a href="{{ '/publications/' | relative_url }}#archive">All research resources</a></nav>
+  </header>
+  <article class="content-prose">
+    {{ content }}
+  </article>
+</div>

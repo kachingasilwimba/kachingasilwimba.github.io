@@ -1,8 +1,7 @@
 ---
-layout: archive
-title: "<span style='color:#0077cc;'>Selected Talks</span>"
+layout: portfolio-archive
+title: Talks and presentations
 permalink: /presentations/
-author_profile: true
 ---
 
 **Understanding Parameter Uncertainty in CLM5 with Machine Learning for Enhanced Hydrological Predictions**   
@@ -21,7 +20,9 @@ Date: February 18, 2025
 - Quantified epistemic and aleatoric uncertainties in LAI via EDNNs  
 - Extended EDNN framework to predict hydrological variables in ungauged basins
   
-<hr style="border:0; height:2px; background:#3498db;">
+
+---
+
 
 **Emulating and Evaluating Uncertainty in CLM5 Simulations Using Evidential Deep Neural Networks**  
 Event: <a href="https://www.agu.org/annual-meeting-2024"
@@ -36,7 +37,9 @@ Date: December 2024
 
 - Presented a novel approach utilizing EDNN to deliver enhanced uncertainty estimates in CLM5 simulations and reduce computational costs.
   
-<hr style="border:0; height:2px; background:#3498db;">
+
+---
+
 
 **Assessing Soil Hydraulic Parameter Impacts and Performing Uncertainty Quantification in Climate Model Simulations Using Advanced Analytical Techniques**  
 Event: <a href="https://sites.google.com/boisestate.edu/spuds/home#h.wst0qqe51wrf"
@@ -54,7 +57,9 @@ Date: October 22, 2024
 - Captured aleatoric & epistemic uncertainties in perturbed ensembles using EDNNs  
 - Tested transferability of methods in CAMELS basins
 
-<hr style="border:0; height:2px; background:#3498db;">
+
+---
+
   
 **History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model**  
 Event: <a href="https://www.pnnl.gov/events/hydroml-2024-symposium"
@@ -69,7 +74,9 @@ Date: May 2024
 
 - Introduced an EDNN-based history matching method that provides richer uncertainty estimates in terrestrial water storage simulations, improving confidence in model outputs.
 
-<hr style="border:0; height:2px; background:#3498db;">
+
+---
+
 
 **Emulating and Evaluating Uncertainty Estimates in CLM5 Terrestrial Water Storage Simulations Using Evidential Deep Neural Networks**  
 Event: <a href="https://www.cesm.ucar.edu/events/351/agenda"
@@ -84,7 +91,9 @@ Date: June 2024
 
 - Highlighted how pinpointing high-uncertainty regions guides better decision-making and model refinements in climate simulations.
 
-<hr style="border:0; height:2px; background:#3498db;">
+
+---
+
 
 **Combining Empirical Orthogonal Functions and Self-Organizing Maps to Understand Soil Parameter Influence in CLM5**   
 Event: <a href="https://www.boisestate.edu/coen/news-events/annual-design-showcase/"
@@ -99,7 +108,9 @@ Date: November 2023
 
 - Applied EOF and SOM analysis to explore relationships between soil properties and moisture dynamics in CLM5.
 
-<hr style="border:0; height:2px; background:#3498db;">
+
+---
+
 
 **Assessing the Effect of Soil Parameter Setups on Soil Moisture in CLM5 over the Continental U.S. Using EOF Analysis**  
 Event: <a href="https://www.boisestate.edu/graduatecollege/showcase/"
@@ -114,7 +125,9 @@ Date: April 2023
 
 - Demonstrated how different soil parameter configurations alter moisture patterns, informing improvements to model calibration and prediction accuracy.
 
-<hr style="border:0; height:2px; background:#3498db;">
+
+---
+
 
 **Integrating Empirical Orthogonal Functions into Machine Learning Workflows**  
 Event: <a href="https://www.boisestate.edu/rcs/research-computing-day/"

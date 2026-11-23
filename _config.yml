@@ -10,13 +10,13 @@ locale                   : "en-US"
 title                    : "Kachinga Silwimba"
 title_separator          : "-"
 name                     : &name "Kachinga Silwimba"
-description              : &description "personal description"
-url                      : https://kachingasilwimba.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Kachinga Silwimba is a data scientist working across machine learning, geospatial data, and scientific computing."
+url                      : "https://kachingasilwimba.com"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "kachingasilwimba.github.io"
+repository               : "kachingasilwimba/kachingasilwimba.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
-seo_description          : "Site Kachinga Silwimba, Graduate Research Assistant at Boise State University"
+seo_description          : *description
 words_per_minute         : 160
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"

@@ -1,0 +1,175 @@
+publications:
+  - title: Integrating Meteorological Forcings and Satellite-Derived Observations to Emulate Snow Water Equivalent in the Colorado Rocky Mountains Using a Spatiotemporal Deep Learning Model
+    year: 2026
+    venue: Journal of Hydrometeorology
+    authors: Stanley Akor, Alejandro Flores, Ibrahim Alabi, Hans-Peter Marshall, and Kachinga Silwimba
+    url: https://doi.org/10.1175/JHM-D-25-0208.1
+    summary: Combined weather model inputs with satellite observations in a convolutional recurrent network to reproduce the amount of water stored in the Colorado Rocky Mountains snowpack.
+    topic: Snowpack emulation
+    code: https://github.com/stanleyakor1/naoh_mp_swe_emulation
+    kind: Journal article
+
+  - title: Efficient Emulation, Uncertainty Quantification, and Sensitivity Analysis for a Land Surface Model Using Evidential Deep Learning
+    year: 2026
+    venue: Journal of Advances in Modeling Earth Systems
+    authors: Kachinga Silwimba, Alejandro N. Flores, Linnia R. Hawkins, Charles Becker, Katherine Dagon, David John Gagne, Jodi Mead, Daniel Kennedy, Irene Cionni, Stanley Akor, Pamela L. Sullivan, Sharon A. Billings, Hoori Ajami, Daniel R. Hirmas, Li Li, and Jesse B. Nippert
+    url: https://doi.org/10.1029/2025MS005587
+    summary: Trained a surrogate on 400 Community Land Model simulations to estimate monthly vegetation canopy variation and its uncertainty across the contiguous United States. Used the surrogate to measure how 32 model parameters affect those estimates by season.
+    topic: Uncertainty quantification
+    code: https://doi.org/10.5281/zenodo.17418678
+    data: https://doi.org/10.5281/zenodo.15170936
+    kind: Journal article
+
+  - title: Uncertainty-Aware Diagnosis of Precipitation Type in AI Weather Models Using an Evidential Deep Neural Network
+    year: 2026
+    venue: ESS Open Archive
+    authors: Stanley Akor, Alejandro N. Flores, John Schreck, David John Gagne, Charles Becker, and Kachinga Silwimba
+    url: https://doi.org/10.22541/essoar.15005511/v1
+    summary: Investigates how an evidential neural network can identify precipitation types and estimate uncertainty in AI weather model output.
+    topic: Weather model diagnostics
+    kind: Preprint
+
+  - title: Evidential Deep Learning Emulation of Monthly Streamflow Anomalies From Land Surface Model Perturbed-Parameter Ensembles in Snow-Dominated Basins
+    year: 2026
+    venue: ESS Open Archive
+    authors: Kachinga Silwimba, Alejandro N. Flores, Linnia R. Hawkins, Katherine Dagon, Charles Becker, David John Gagne, Irene Cionni, Jodi Mead, Andrew W. Wood, Guoqiang Tang, Stanley Akor, Pamela L. Sullivan, Sharon A. Billings, Hoori Ajami, Daniel R. Hirmas, Li Li, and Jesse B. Nippert
+    url: https://doi.org/10.22541/essoar.15003561/v1
+    summary: Trains an evidential neural network on land-model ensembles to estimate monthly departures from typical streamflow in snow-dominated basins.
+    topic: Streamflow emulation
+    kind: Preprint
+
+  - title: Understanding Parameter Uncertainty in a Land Surface Model with Evidential Deep Learning for Enhanced Hydrological Predictions
+    year: 2026
+    venue: Boise State University Graduate College
+    authors: Kachinga Silwimba
+    url: https://events.boisestate.edu/event/dissertation-defense-kachinga-silwimba
+    summary: Dissertation defense covering vegetation canopy emulation, streamflow in snow-dominated basins, and soil moisture sensitivity to land model parameters.
+    topic: Land-surface modeling
+    kind: Dissertation defense
+
+  - title: Scalable, Uncertainty-Aware Streamflow Prediction in Snow-Dominated Catchments Using Evidential Deep Learning and CLM5 Ensembles
+    year: 2025
+    venue: ESS Open Archive
+    authors: Kachinga Silwimba, Alejandro N. Flores, Linnia Hawkins, Charles Becker, Katherine Dagon, David John Gagne, Irene Cionni, Jodi Mead, Stanley Akor, Pamela L. Sullivan, Sharon A. Billings, Daniel Hirmas, Li Li, Jesse Nippert, Andy Wood, and Guoqiang Tang
+    url: https://doi.org/10.22541/essoar.176643123.38647569/v1
+    summary: Explores whether training on a wider range of simulations and catchments improves streamflow predictions and uncertainty estimates for snow-dominated basins.
+    topic: Streamflow emulation
+    kind: Preprint
+
+  - title: Efficient Emulation, Uncertainty Quantification, and Sensitivity Analysis for a Land Surface Model using Evidential Deep Learning
+    year: 2025
+    venue: ESS Open Archive
+    authors: Kachinga Silwimba, Alejandro N. Flores, Linnia Hawkins, Charles Becker, Katherine Dagon, David John Gagne, Jodi Mead, Irene Cionni, Stanley Akor, Pamela L. Sullivan, Sharon A. Billings, Daniel R. Hirmas, Hoori Ajami, Li Li, Jesse B. Nippert, and Daniel Kennedy
+    url: https://doi.org/10.22541/essoar.176409114.40301018/v1
+    summary: Earlier version of the land-surface emulation study published in Journal of Advances in Modeling Earth Systems in 2026.
+    topic: Uncertainty quantification
+    kind: Preprint
+
+  - title: Soil parameterization in land surface models drives large discrepancies in soil moisture predictions across hydrologically complex regions of the contiguous United States
+    year: 2025
+    venue: Geoscientific Model Development
+    authors: Kachinga Silwimba, Alejandro N. Flores, Irene Cionni, Sharon A. Billings, Pamela L. Sullivan, Hoori Ajami, Daniel R. Hirmas, and Li Li
+    url: https://doi.org/10.5194/gmd-18-7707-2025
+    summary: Tested alternative soil parameter settings and mapped where they change simulated soil moisture. The central Great Plains showed especially large differences.
+    topic: Soil moisture
+    code: https://doi.org/10.5281/zenodo.14888812
+    data: https://doi.org/10.5281/zenodo.15078448
+    kind: Journal article
+
+  - title: Soil Parameterization in Land Surface Models Drives Large Discrepancies in Soil Moisture Predictions Across Hydrologically Complex regions of the Contiguous United States
+    year: 2025
+    venue: EGUsphere
+    authors: Kachinga Silwimba, Alejandro N. Flores, Irene Cionni, Sharon A. Billings, Pamela L. Sullivan, Hoori Ajami, Daniel R. Hirmas, and Li Li
+    url: https://doi.org/10.5194/egusphere-2025-713
+    summary: Earlier version of the soil moisture study published in Geoscientific Model Development in 2025.
+    topic: Soil moisture
+    kind: Preprint
+
+  - title: History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model
+    year: 2024
+    venue: ESS Open Archive
+    authors: Kachinga Silwimba, Alejandro N. Flores, Linnia Hawkins, Charles Becker, Katie Dagon, Irene Cionne, Pamela L. Sullivan, Sharon A. Billings, Daniel Hirmas, Hoori Ajami, Matthew T. Amato, and Li Li
+    url: https://doi.org/10.22541/essoar.173524553.35038718/v1
+    summary: Used an uncertainty-aware emulator and GRACE satellite observations to identify plausible land model settings for estimating terrestrial water storage.
+    topic: Water storage
+    kind: Preprint
+
+  - title: Deep Learning Approach to predict Snow Water Equivalent from Atmospheric Forcings
+    year: 2024
+    venue: ESS Open Archive
+    authors: Stanley Akor, Kachinga Silwimba, and Alejandro N. Flores
+    url: https://doi.org/10.22541/essoar.173457175.57831871/v1
+    summary: Explored combining simulated weather, terrain, vegetation, and satellite snow cover to estimate how much water is stored in snowpack.
+    topic: Snowpack emulation
+    kind: Preprint
+
+  - title: History Matching with Evidential Deep Neural Networks to Improve Terrestrial Water Storage Simulations in the Community Land Model
+    year: 2024
+    venue: AGU Fall Meeting, GC11T-0152
+    authors: Kachinga Silwimba, Alejandro N. Flores, Charles Becker, Linnia R. Hawkins, Katherine Dagon, and Irene Cionni
+    url: https://ui.adsabs.harvard.edu/abs/2024AGUFMGC11T0152S/abstract
+    topic: Water storage
+    kind: Conference abstract
+
+  - title: Examining Hydrometeorological Controls on Transpiration in a Semiarid, Snow-Dominated Watershed Using Machine-Learning Enabled Approaches
+    year: 2024
+    venue: AGU Fall Meeting, H21R-0875
+    authors: D. Bishop, A. N. Flores, S. Akor, K. Silwimba, and I. Cionni
+    url: https://ui.adsabs.harvard.edu/abs/2024AGUFMH21R.0875B/abstract
+    topic: Watershed hydrology
+    kind: Conference abstract
+
+  - title: Fitting Rwanda’s Currency Market Returns with the Poisson Compound Model with Normal Inverse Gaussian Jumps
+    year: 2023
+    venue: Journal of Financial Risk Management
+    authors: Emmanuel Malichi, Marcel Ndengo, Danny Mukonda, Stephen Kiilu, Denish Azamuke, and Kachinga Silwimba
+    url: https://doi.org/10.4236/jfrm.2023.124020
+    summary: Compared three statistical models for currency returns in Rwanda. A compound Poisson model with normal inverse Gaussian jumps provided the best fit among those tested.
+    topic: Statistical modeling
+    kind: Journal article
+
+  - title: Integrating Empirical Orthogonal Functions (EOFs) into Machine Learning Model
+    year: 2023
+    venue: Boise State University Research Computing Days
+    authors: Kachinga Silwimba
+    url: https://scholarworks.boisestate.edu/rcd_2023/14/
+    topic: Climate data analysis
+    code: https://github.com/kachingasilwimba/Research-Computing-Days
+    kind: Research poster
+
+  - title: Comparison and Evaluation of CMIP5 and CMIP6 Global Atmospheric Models in Simulating Precipitation Extremes over Southern Africa
+    year: 2021
+    venue: African Institute for Mathematical Sciences, Rwanda
+    authors: Kachinga Silwimba
+    url: https://library.nexteinstein.org/thesis/comparison-and-evaluation-of-cmip5-and-cmip6-global-atmospheric-models-in-simulating-precipitation-extremes-over-southern-africa/
+    summary: Evaluated two generations of global climate models against observations of precipitation extremes in Southern Africa.
+    topic: Climate model evaluation
+    kind: Master’s research essay
+
+writing:
+  - title: 'When Ensembles Teach: Evidential Emulators for Snowmelt Streamflow'
+    year: 2026
+    venue: SIAM News
+    authors: Kachinga Silwimba
+    url: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
+    summary: Explains how an emulator learned from multiple simulations and used uncertainty to identify difficult predictions across 69 snow-dominated basins.
+    topic: Streamflow emulation
+    kind: Research article
+
+  - title: 'Enhancing Leaf Area Index Simulations With Evidential Deep Learning: A Probabilistic Approach to Uncertainty and Sensitivity'
+    year: 2025
+    venue: SIAM News
+    authors: Kachinga Silwimba
+    url: https://www.siam.org/publications/siam-news/articles/enhancing-leaf-area-index-simulations-with-evidential-deep-learning-a-probabilistic-approach-to-uncertainty-and-sensitivity/
+    summary: Explains how a probabilistic neural network estimates vegetation canopy and identifies which model settings contribute most to its variability.
+    topic: Uncertainty quantification
+    kind: Research article
+
+  - title: 'Impact of Soil Hydraulic Parameter Variability on Soil Moisture: An Empirical Orthogonal Function Analysis'
+    year: 2025
+    venue: SIAM News
+    authors: Kachinga Silwimba
+    url: https://www.siam.org/publications/siam-news/articles/impact-of-soil-hydraulic-parameter-variability-on-soil-moisture-an-empirical-orthogonal-function-analysis/
+    summary: Describes using empirical orthogonal functions to find dominant soil moisture patterns and see how they respond to changes in model settings.
+    topic: Soil moisture
+    kind: Research article

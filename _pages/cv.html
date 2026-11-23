@@ -1,17 +1,86 @@
 ---
-layout: archive
-title: "<span style='color:#0077cc;'>Resume</span>"
+layout: portfolio
+title: Résumé
 permalink: /cv/
-author_profile: true
+description: Kachinga Silwimba’s résumé, technical skills, machine learning projects, experience at Boise State and NSF NCAR, and education.
+image: /assets/portfolio/portrait.webp
 redirect_from:
   - /wordpress/cv/
 ---
 
+<div class="page-shell">
+<article class="resume-page">
+  <header class="resume-head">
+    <h1>Résumé</h1>
+    <p class="resume-name">Kachinga Silwimba</p>
+    <p class="resume-headline">Data Scientist | Machine Learning &amp; Data Engineering</p>
+    <p class="resume-contact">Denver metro, Colorado · <a href="mailto:kachingasilwimba@u.boisestate.edu">kachingasilwimba@u.boisestate.edu</a> · <a href="https://kachingasilwimba.com/">kachingasilwimba.com</a> · <a href="https://www.linkedin.com/in/kachinga-silwimba/">LinkedIn</a> · <a href="https://github.com/kachingasilwimba">GitHub</a></p>
+    <p><a class="resume-download" href="{{ '/assets/Kachinga_Silwimba_Resume.pdf' | relative_url }}" download>Download résumé PDF</a></p>
+    <p class="resume-summary">Data scientist with a Ph.D. in Computing and experience building predictive models and reproducible data workflows for large, multidimensional datasets. Focus areas include uncertainty estimation, scientific machine learning, and scalable data processing on Linux and HPC.</p>
+  </header>
 
-{% include base_path %}
-{% capture written_label %}'None'{% endcapture %}
+  <section class="resume-section" aria-labelledby="resume-skills">
+    <h2 id="resume-skills">Technical skills</h2>
+    <dl class="resume-skills">
+    <div><dt>Programming and data</dt><dd>Python, SQL, R, Bash, pandas, NumPy, Xarray, Dask, Spark</dd></div>
+    <div><dt>Machine learning</dt><dd>PyTorch, TensorFlow, scikit-learn, probabilistic regression, model validation</dd></div>
+    <div><dt>Engineering and geospatial</dt><dd>Slurm, Docker, Singularity, Git, MLflow, NetCDF, Zarr, Cartopy</dd></div>
+    </dl>
+  </section>
 
-If the embedded PDF below does not load, you can <u><a href="https://kachingasilwimba.github.io/assets/Kachinga_Silwimba_Resume.pdf" style="color: #0000FF;">download it here.</a></u>
-<br/>
+  <section class="resume-section" aria-labelledby="resume-experience">
+    <h2 id="resume-experience">Experience</h2>
+  <article class="resume-item">
+    <h3>NSF National Center for Atmospheric Research</h3>
+    <p class="resume-meta"><strong>CISL Visiting Scholar</strong> <span>Sep 2025 – May 2026</span></p>
+    <ul>
+      <li>Built Python workflows on NCAR HPC to prepare land-model simulations, hydrologic observations, and basin attributes.</li>
+      <li>Evaluated probabilistic streamflow emulators across 69 snow-dominated basins. Measured predictive skill, interval coverage, and transfer to data-sparse conditions.</li>
+    </ul>
+    <p class="resume-refs"><a href="https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/">SIAM article</a></p>
+  </article>
+  <article class="resume-item">
+    <h3>Boise State University</h3>
+    <p class="resume-meta"><strong>Doctoral Research · School of Computing</strong> <span>2021–2026</span></p>
+    <ul>
+      <li>Led development of an evidential emulator trained on 400 of 500 CLM5 simulations spanning 32 vegetation parameters. Achieved a median R² of about 0.8 for leaf area index on held-out ensemble members and years.</li>
+      <li>Used empirical orthogonal functions to diagnose how alternative soil parameters changed soil moisture patterns across the contiguous U.S. Published analysis code and data products.</li>
+    </ul>
+    <p class="resume-refs"><a href="https://doi.org/10.1029/2025MS005587">Emulation paper</a> · <a href="https://doi.org/10.5194/gmd-18-7707-2025">Soil moisture paper</a> · <a href="https://doi.org/10.5281/zenodo.17418678">Software</a></p>
+  </article>
+  <article class="resume-item">
+    <h3>NSF National Center for Atmospheric Research</h3>
+    <p class="resume-meta"><strong>Advanced Study Program Graduate Research Fellow</strong> <span>Mar–Jun 2024</span></p>
+    <ul>
+      <li>Developed adaptive-learning workflows for CLM5 parameter calibration and prepared simulation outputs for statistical evaluation on HPC systems.</li>
+    </ul>
+  </article>
+  </section>
 
-<embed src="https://kachingasilwimba.github.io/assets/Kachinga_Silwimba_Resume.pdf" type="application/pdf" width="100%" />
+  <section class="resume-section" aria-labelledby="resume-project">
+    <h2 id="resume-project">Current project</h2>
+  <article class="resume-item">
+    <h3>TerraTorch Learning Lab</h3>
+    <p class="resume-meta"><strong>Current project · Prithvi-EO and satellite imagery</strong></p>
+    <ul>
+      <li>Built a Python lab and browser explorer that connect six-band satellite imagery to patch embeddings. Verified pretrained Prithvi-EO Tiny-TL inference on CPU with two public HLS observations.</li>
+    </ul>
+    <p class="resume-refs"><a href="https://kachingasilwimba.com/terratorch-learning-lab/">Open the lab</a></p>
+  </article>
+  </section>
+
+  <section class="resume-section" aria-labelledby="resume-education">
+    <h2 id="resume-education">Education</h2>
+    <ul class="resume-education">
+    <li><strong>Ph.D. in Computing, Data Science</strong><span>Boise State University · 2026</span></li>
+    <li><strong>M.Sc. in Mathematical Sciences</strong><span>African Institute for Mathematical Sciences · 2021</span></li>
+    <li><strong>B.Sc. in Physics, Computational Physics</strong><span>Copperbelt University · 2019</span></li>
+    </ul>
+  </section>
+
+  <section class="resume-section" aria-labelledby="resume-recognition">
+    <h2 id="resume-recognition">Selected recognition</h2>
+    <p>AWWA Pacific Northwest Section Scholarship (2025) · William Averette Anderson Fund Fellow (2024)</p>
+  </section>
+</article>
+</div>

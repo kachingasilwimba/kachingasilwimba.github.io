@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  {% assign description = page.description | default: site.description %}
+  {% assign social_image = page.image | default: "/assets/portfolio/snake-river.webp" %}
+  <title>{% if page.url == "/" %}Kachinga Silwimba · Data Scientist{% else %}{{ page.title | escape }} · Kachinga Silwimba{% endif %}</title>
+  <meta name="description" content="{{ description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kachinga Silwimba">
+  <meta property="og:title" content="{% if page.url == '/' %}Kachinga Silwimba · Data Scientist{% else %}{{ page.title | escape }} · Kachinga Silwimba{% endif %}">
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ social_image | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="{{ '/assets/portfolio/icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/portfolio/site.css' | relative_url }}">
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kachinga Silwimba",
+      "jobTitle": "Data Scientist",
+      "url": {{ '/' | absolute_url | jsonify }},
+      "image": {{ '/assets/portfolio/portrait.webp' | absolute_url | jsonify }},
+      "sameAs": [
+        "https://www.linkedin.com/in/kachinga-silwimba/",
+        "https://github.com/kachingasilwimba",
+        "https://orcid.org/0009-0005-9013-1032"
+      ]
+    }
+  </script>
+  {% endif %}
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">KS</span><span>Kachinga Silwimba</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}#work">Work</a>
+        <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} aria-current="page"{% endif %}>Research</a>
+        <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>Résumé</a>
+        <a class="nav-contact" href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    {{ content }}
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">KS</span><span>Kachinga Silwimba</span></a>
+      <nav aria-label="Professional profiles">
+        <a href="https://www.linkedin.com/in/kachinga-silwimba/">LinkedIn</a>
+        <a href="https://github.com/kachingasilwimba">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=UluXFnQAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://orcid.org/0009-0005-9013-1032">ORCID</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

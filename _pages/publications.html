@@ -1,0 +1,60 @@
+---
+layout: portfolio
+title: Research and publications
+permalink: /publications/
+description: Kachinga Silwimba’s journal articles, preprints, datasets, software, and writing on machine learning, Earth science, and scientific computing.
+---
+
+<div class="page-shell">
+  <header class="page-head">
+    <h1>Research and publications</h1>
+    <p>My research examines how to make scientific models faster, how to measure their uncertainty, and how to evaluate them against observations.</p>
+    <nav class="page-jump" aria-label="On this page">
+      <a href="#journal-articles">Journal articles</a>
+      <a href="#other-research">Preprints and academic work</a>
+      <a href="#research-writing">Research writing</a>
+      <a href="#archive">More resources</a>
+      <a href="https://scholar.google.com/citations?user=UluXFnQAAAAJ&amp;hl=en">Google Scholar</a>
+    </nav>
+  </header>
+
+  <section class="collection-section" id="journal-articles" aria-labelledby="journal-title">
+    <h2 id="journal-title">Journal articles</h2>
+    <ol class="publication-list">
+      {% assign journal_articles = site.data.research.publications | where: "kind", "Journal article" %}
+      {% for entry in journal_articles %}
+        {% include portfolio-research-entry.html item=entry %}
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="collection-section" id="other-research" aria-labelledby="preprints-title">
+    <h2 id="preprints-title">Preprints and academic work</h2>
+    <ol class="publication-list">
+      {% for entry in site.data.research.publications %}
+        {% unless entry.kind == "Journal article" %}
+          {% include portfolio-research-entry.html item=entry %}
+        {% endunless %}
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="collection-section" id="research-writing" aria-labelledby="writing-title">
+    <h2 id="writing-title">Research writing</h2>
+    <ol class="publication-list">
+      {% for entry in site.data.research.writing %}
+        {% include portfolio-research-entry.html item=entry %}
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="collection-section" id="archive" aria-labelledby="archive-title">
+    <h2 id="archive-title">More resources</h2>
+    <ul class="archive-grid">
+      <li><a href="{{ '/presentations/' | relative_url }}">Talks and presentations<span>Seminars, workshops, and conference presentations</span></a></li>
+      <li><a href="{{ '/zenodo/' | relative_url }}">Data and software<span>Archived code and reproducible research datasets</span></a></li>
+      <li><a href="{{ '/newsletter/' | relative_url }}">Writing and outreach<span>Public-facing articles and research features</span></a></li>
+      <li><a href="{{ '/summerschool/' | relative_url }}">Research training<span>Summer schools and technical workshops</span></a></li>
+    </ul>
+  </section>
+</div>

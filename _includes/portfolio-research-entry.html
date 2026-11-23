@@ -1,0 +1,16 @@
+{% assign item = include.item %}
+<li class="publication-item">
+  <span class="publication-year">{{ item.year }}</span>
+  <article>
+    <p class="publication-type">{{ item.venue | escape }} · {{ item.kind | escape }}</p>
+    <h3><a href="{{ item.url | escape }}">{{ item.title | escape }}</a></h3>
+    {% if item.authors %}<p class="publication-authors">{{ item.authors | escape }}</p>{% endif %}
+    {% if item.summary %}<p class="publication-summary">{{ item.summary | escape }}</p>{% endif %}
+    {% if item.code or item.data %}
+      <div class="resource-links">
+        {% if item.code %}<a href="{{ item.code | escape }}" aria-label="Code for {{ item.title | escape }}">Code</a>{% endif %}
+        {% if item.data %}<a href="{{ item.data | escape }}" aria-label="Data for {{ item.title | escape }}">Data</a>{% endif %}
+      </div>
+    {% endif %}
+  </article>
+</li>

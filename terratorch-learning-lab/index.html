@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore real satellite imagery and run the Prithvi-EO foundation model with TerraTorch.">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>TerraTorch Learning Lab · Prithvi-EO</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="lab.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a href="#top" class="wordmark"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>TerraTorch <span class="wordmark-secondary">Learning Lab</span></span></a>
+      <nav aria-label="Main">
+        <a href="#lessons">Lessons</a>
+        <a href="#explorer">Explorer</a>
+        <a href="#setup" class="nav-run">Run locally</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="accent-line"></span> TerraTorch × Prithvi-EO</p>
+        <h1 id="hero-title">From satellite<br>pixels to model<br><em>tokens.</em></h1>
+        <p class="hero-intro">Explore six-band satellite imagery, see how it becomes a grid of patches, then run the Prithvi-EO foundation model with TerraTorch.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#explorer">Open the explorer</a>
+          <a class="button secondary" href="#setup">Set up the Python lab</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="hero-photo">
+          <img src="assets/earth.webp" alt="Landsat view of the Florida Keys and surrounding turquoise shallows" width="1440" height="700" fetchpriority="high">
+          <div class="photo-grid" aria-hidden="true"></div>
+          <span class="photo-corner top-left" aria-hidden="true"></span><span class="photo-corner bottom-right" aria-hidden="true"></span>
+        </div>
+        <figcaption><span>Florida Keys, 22 Feb 2024</span><a href="https://science.nasa.gov/earth/earth-observatory/landsat-plumbs-the-shallow-depths/">NASA Earth Observatory / Wanmei Liang · USGS Landsat</a></figcaption>
+      </figure>
+    </section>
+    <div class="shell fact-strip" aria-label="Model specifications">
+      <div><strong>6</strong><span>Spectral bands</span></div>
+      <div><strong>16 × 16</strong><span>Pixels per patch</span></div>
+      <div><strong>192</strong><span>Features per token</span></div>
+      <div><strong>5M</strong><span>Tiny-TL encoder parameters</span></div>
+    </div>
+
+    <section class="section shell" id="lessons" aria-labelledby="lesson-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="accent-line"></span> The learning path</p>
+        <h2 id="lesson-title">Read the image.<br>Then read the model.</h2>
+      </div>
+      <div class="lesson-list">
+        <details open>
+          <summary><span class="lesson-number">01</span><span>Read a multispectral scene</span><span class="disclosure" aria-hidden="true"></span></summary>
+          <div class="lesson-body"><p>Switch between visible light, a near-infrared composite, and NDVI. Find a patch where the near-infrared band is brighter than red, and see how that difference changes across dates.</p><a href="#explorer">Explore the bands</a></div>
+        </details>
+        <details>
+          <summary><span class="lesson-number">02</span><span>Follow pixels into the encoder</span><span class="disclosure" aria-hidden="true"></span></summary>
+          <div class="lesson-body"><p>Prithvi-EO groups a 224 × 224 frame into 196 spatial patches. Each patch covers 16 × 16 pixels across all six bands. Two frames produce 392 patch tokens, plus one class token.</p><a href="#explorer">Inspect the patch grid</a></div>
+        </details>
+        <details>
+          <summary><span class="lesson-number">03</span><span>Compare embeddings across dates</span><span class="disclosure" aria-hidden="true"></span></summary>
+          <div class="lesson-body"><p>Run the pretrained encoder and compare vectors from the same patch on two dates. A low cosine similarity flags a difference in the representation. Look at the imagery and quality masks before interpreting what changed on the ground.</p><a href="#setup">Run the model</a></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="explorer-section" id="explorer" aria-labelledby="explorer-title">
+      <div class="shell section">
+        <div class="section-heading explorer-heading">
+          <p class="eyebrow"><span class="accent-line"></span> Interactive lab</p>
+          <h2 id="explorer-title">The patch explorer</h2>
+          <p>Two HLS observations of the same site in Mexico. Switch layers, then select a patch to compare its reflectance, vegetation index, and Prithvi-EO embeddings.</p>
+        </div>
+        <div class="explorer-tool">
+          <div class="tool-bar">
+            <label for="scene-date">Observation <select id="scene-date" disabled><option>Loading scenes…</option></select></label>
+            <fieldset class="layers" id="layers" disabled>
+              <legend class="sr-only">Image layer</legend>
+              <label><input type="radio" name="layer" value="true-color" checked><span>True color</span></label>
+              <label><input type="radio" name="layer" value="false-color"><span>False color</span></label>
+              <label><input type="radio" name="layer" value="ndvi"><span>NDVI</span></label>
+            </fieldset>
+            <label class="grid-toggle"><input id="grid-toggle" type="checkbox" checked disabled> Patch grid</label>
+          </div>
+          <p id="load-status" class="load-status" role="status">Loading the HLS observations…</p>
+          <div id="explorer-content" class="explorer-content" hidden>
+            <div class="visual-panel">
+              <div class="scene-map">
+                <img id="scene-image" alt="" width="224" height="224">
+                <canvas id="patch-overlay" width="448" height="448" role="img" aria-label="Patch grid. Use the row and column controls to select a patch by keyboard."></canvas>
+              </div>
+              <p id="layer-caption" class="layer-caption"></p>
+              <div id="ndvi-scale" class="ndvi-scale" aria-label="NDVI color scale from minus one to plus one" hidden><span>−1</span><span class="scale-bar"></span><span>+1</span></div>
+            </div>
+            <div class="patch-panel">
+              <p class="eyebrow"><span class="accent-line"></span> Selected patch</p>
+              <h3 id="patch-title">Row 9, column 4</h3>
+              <div class="patch-controls">
+                <label for="patch-row">Row <select id="patch-row"></select></label>
+                <label for="patch-col">Column <select id="patch-col"></select></label>
+                <span id="valid-count"></span>
+              </div>
+              <div class="readout" aria-live="polite" aria-atomic="true">
+                <div class="ndvi-readout"><span>Mean NDVI</span><strong id="ndvi-value">—</strong><span id="ndvi-delta"></span></div>
+                <div class="ndvi-readout"><span>Embedding distance</span><strong id="embedding-distance">—</strong><span>Jan to Jul · scale 0–2</span></div>
+                <p class="band-heading">Mean surface reflectance</p>
+                <dl id="bands" class="bands"></dl>
+              </div>
+              <p class="patch-note">Embedding distance is precomputed with the pretrained Tiny-TL encoder. Larger values indicate a greater change in the model’s representation of the patch. Use the imagery to investigate what might explain it.</p>
+            </div>
+          </div>
+          <div class="tool-footer"><span>HLS Sentinel-2 · Tile T13REM · 30 m pixels</span><a href="https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-tiny-TL/tree/335eadc2c45ad5abe7bd307223e1c48c5b60c41b/examples">Source imagery</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell setup-section" id="setup" aria-labelledby="setup-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="accent-line"></span> Python lab</p>
+        <h2 id="setup-title">Run Prithvi-EO<br>on your machine.</h2>
+        <p>Use Python 3.12 and the CPU-friendly Prithvi-EO 2.0 Tiny-TL encoder. Start with synthetic scenes, then try the HLS examples you explored above. GitHub repository access is required to get the Python source.</p>
+        <a id="source-link" class="button secondary" href="https://github.com/kachingasilwimba/terratorch-learning-lab">Open the GitHub repository</a>
+      </div>
+      <div class="commands">
+        <details class="command-step" open>
+          <summary><span>Prepare the environment</span><span class="disclosure" aria-hidden="true"></span></summary>
+          <div class="command-body"><p>From the lab directory, create and activate a virtual environment. The activation command below is for macOS and Linux. On Windows PowerShell, use <code>.venv\Scripts\Activate.ps1</code>.</p>
+            <div class="code-block"><pre><code id="install-code">python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt</code></pre><button class="copy" type="button" data-copy="install-code">Copy</button></div>
+            <p class="command-followup">Install the CPU encoder and geospatial dependencies. On macOS, run only the second command.</p>
+            <div class="code-block"><pre><code id="model-code">python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements-model.txt</code></pre><button class="copy" type="button" data-copy="model-code">Copy</button></div>
+          </div>
+        </details>
+        <details class="command-step">
+          <summary><span>Inspect and encode</span><span class="disclosure" aria-hidden="true"></span></summary>
+          <div class="command-body"><p>Inspect the synthetic inputs offline after installation. The first encoder run fetches the pretrained weights, about 129 MB.</p>
+            <div class="code-block"><pre><code id="encode-code">python -m terratorch_lab inspect
+python -m terratorch_lab encode</code></pre><button class="copy" type="button" data-copy="encode-code">Copy</button></div>
+          </div>
+        </details>
+        <details class="command-step">
+          <summary><span>Try the real HLS sample</span><span class="disclosure" aria-hidden="true"></span></summary>
+          <div class="command-body"><p>Download and prepare two aligned scenes. Compare the encoder’s patch differences with the spectral differences you saw in the explorer.</p>
+            <div class="code-block"><pre><code id="sample-code">python -m terratorch_lab sample
+python -m terratorch_lab inspect --input lab-output/hls-sample.npz --output-dir lab-output/hls
+python -m terratorch_lab encode --input lab-output/hls-sample.npz --output-dir lab-output/hls</code></pre><button class="copy" type="button" data-copy="sample-code">Copy</button></div>
+          </div>
+        </details>
+        <p id="copy-status" class="sr-only" role="status"></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="shell footer-inner">
+      <a href="#top" class="wordmark"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>TerraTorch <span class="wordmark-secondary">Learning Lab</span></span></a>
+      <nav aria-label="Resources">
+        <a href="https://github.com/torchgeo/terratorch">TerraTorch</a>
+        <a href="https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-tiny-TL">Model card</a>
+        <a href="https://hls.gsfc.nasa.gov/">NASA HLS</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

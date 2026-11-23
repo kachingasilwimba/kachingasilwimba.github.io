@@ -17,6 +17,11 @@ function wireGalleryTabs(group, onManualSelect) {
       tab.tabIndex = selected ? 0 : -1;
       panels[position].hidden = !selected;
     });
+    if (group.scrollWidth > group.clientWidth) {
+      const track = group.getBoundingClientRect();
+      const tab = tabs[index].getBoundingClientRect();
+      group.scrollLeft += Math.min(0, tab.left - track.left) + Math.max(0, tab.right - track.right);
+    }
   }
 
   tabs.forEach((tab, index) => {
@@ -49,6 +54,53 @@ function wireGalleryTabs(group, onManualSelect) {
   return { panels, select, get index() { return activeIndex; } };
 }
 
+function wireFigureViewer(gallery, pause) {
+  const viewer = gallery.querySelector("[data-gallery-viewer]");
+  if (typeof viewer?.showModal !== "function") return;
+
+  const title = viewer.querySelector("h3");
+  const canvas = viewer.querySelector("[data-gallery-canvas]");
+  const image = canvas.querySelector("img");
+  const zoom = viewer.querySelector("[data-gallery-zoom]");
+  const original = viewer.querySelector("[data-gallery-original]");
+  let trigger;
+
+  gallery.querySelectorAll("[data-gallery-inspect]").forEach((link) => {
+    link.setAttribute("aria-haspopup", "dialog");
+  });
+
+  function updateZoom() {
+    canvas.dataset.zoom = zoom.value;
+    canvas.scrollTop = 0;
+    canvas.scrollLeft = 0;
+  }
+
+  gallery.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-gallery-inspect]");
+    if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+
+    event.preventDefault();
+    pause();
+    trigger = link;
+    const preview = link.querySelector("img");
+    const stage = link.closest(".gallery-stage");
+    const width = preview.getAttribute("width");
+    title.textContent = stage.querySelector(".kicker").textContent + " · " + stage.querySelector("[data-gallery-figure-title]").textContent;
+    image.alt = preview.alt;
+    image.width = Number(width);
+    image.height = Number(preview.getAttribute("height"));
+    image.src = link.href;
+    original.href = link.href;
+    canvas.style.setProperty("--figure-width", width + "px");
+    zoom.value = "fit";
+    viewer.showModal();
+    updateZoom();
+  });
+
+  zoom.addEventListener("change", updateZoom);
+  viewer.addEventListener("close", () => trigger?.focus({ preventScroll: true }));
+}
+
 function initializeGallery(gallery) {
   const controls = gallery.querySelector("[data-gallery-controls]");
   const toggle = controls.querySelector("[data-gallery-toggle]");
@@ -77,8 +129,8 @@ function initializeGallery(gallery) {
   function step(direction) {
     const next = (currentHighlight() + direction + highlights.length) % highlights.length;
     const { topic, figure } = highlights[next];
-    figures[topic].select(figure);
     topics.select(topic);
+    figures[topic].select(figure);
   }
 
   function updateRotation() {
@@ -123,6 +175,7 @@ function initializeGallery(gallery) {
   });
   controls.querySelector("[data-gallery-previous]").addEventListener("click", () => manualStep(-1));
   controls.querySelector("[data-gallery-next]").addEventListener("click", () => manualStep(1));
+  wireFigureViewer(gallery, pause);
 
   gallery.addEventListener("focusin", (event) => {
     if (event.target !== toggle && playing) pause();

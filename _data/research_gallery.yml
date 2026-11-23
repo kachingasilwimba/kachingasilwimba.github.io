@@ -2,7 +2,10 @@
   topic: Land-surface emulation
   area: Evidential deep learning
   title: Uncertainty-aware emulation of CLM5 leaf area index
-  summary: I led development of a CLM5 emulator trained on 400 ensemble members. It predicts leaf area index, estimates uncertainty, and makes it practical to test which model parameters matter by season.
+  summary: I led development of a surrogate for CLM5 leaf area index anomalies to quantify prediction uncertainty and test which model parameters matter by season.
+  data_scope: 400 training simulations spanning 32 model parameters.
+  method: An evidential neural network predicts leaf area anomalies and estimates data and model uncertainty in one pass.
+  result: R² of 0.83 against CLM5 on held-out parameter settings and years.
   paper: https://doi.org/10.1029/2025MS005587
   links:
     - label: View the code
@@ -104,7 +107,10 @@
   topic: Soil moisture
   area: Land-surface hydrology
   title: EOF analysis of CLM5 soil moisture variability
-  summary: I led a 31-year comparison of CLM5 simulations using empirical orthogonal function (EOF) analysis to understand where and when soil moisture varies under different soil assumptions.
+  summary: I led an empirical orthogonal function (EOF) analysis to test how soil parameter choices affect where and when root-zone moisture varies.
+  data_scope: 31 years of soil moisture from seven CLM5 configurations and ERA5-Land.
+  method: Truncated singular value decomposition isolates the leading spatial patterns and tracks how they vary over time.
+  result: The leading pattern agreed well with ERA5-Land in the western United States. Differences were larger in the central Great Plains.
   paper: https://doi.org/10.5194/gmd-18-7707-2025
   links:
     - label: View the analysis code
@@ -165,7 +171,10 @@
   topic: Streamflow prediction
   area: Mountain hydrology
   title: Evidential emulation of monthly streamflow anomalies
-  summary: I developed an evidential deep learning emulator for snow-dominated basins, using CLM5 ensembles to evaluate prediction accuracy, uncertainty, and transfer between basin types.
+  summary: I developed an emulator to test how training diversity affects streamflow predictions, uncertainty, and transfer across snow-dominated basins.
+  data_scope: 69 snow-dominated basins and training sets of 30 to 150 CLM5 ensemble members.
+  method: Evidential deep learning estimates uncertainty. Transfer tests fine-tune models on the two clusters with the highest snow fractions.
+  result: The largest gains in prediction skill came as training grew from 30 to 60 ensemble members. Larger ensembles narrowed the transfer gap.
   paper: https://essopenarchive.org/doi/full/10.22541/essoar.15003561/v1
   paper_label: Read the preprint
   links:

@@ -99,9 +99,12 @@ ul, ol { padding-inline-start: 1.2em; }
 
 .capabilities { background: #eef1fa; border-block: 1px solid #d8deed; }
 .skill-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-.skill-grid article { border-top: 2px solid #9eafe9; padding-top: 1.25rem; }
+.skill-grid article { display: flex; flex-direction: column; border-top: 2px solid #9eafe9; padding-top: 1.25rem; }
 .skill-grid h3 { font-size: clamp(1.25rem, 2.4vw, 1.75rem); }
 .skill-grid p:not(.tech-line) { color: var(--muted); }
+.skill-grid ul { margin: 0 0 1rem; color: var(--muted); }
+.skill-grid li + li { margin-top: .4rem; }
+.skill-grid .tech-line { margin-top: auto; }
 .tech-line { margin-bottom: 0; color: #233c81; font: .82rem/1.65 var(--mono); }
 .about-profile { display: grid; grid-template-columns: minmax(0, 1fr) minmax(12rem, .5fr); align-items: center; gap: clamp(1.25rem, 4.5vw, 3.6rem); padding: clamp(1.2rem, 4vw, 3.15rem); border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 10px; background: var(--white); }
 .about-copy h2 { margin-bottom: 1rem; font-size: clamp(2rem, 4.2vw, 3.45rem); text-wrap: balance; }

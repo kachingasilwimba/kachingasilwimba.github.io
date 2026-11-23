@@ -79,9 +79,33 @@ redirect_from:
   <div class="shell section">
     <div class="section-intro"><div><p class="kicker"><span class="signal" aria-hidden="true"></span> Technical skills</p><h2 id="skills-title">How I work</h2></div></div>
     <div class="skill-grid">
-      <article><h3>Machine learning</h3><p>Build and evaluate predictive models, from statistical baselines to deep learning. Measure what the model gets right and where its uncertainty matters.</p><p class="tech-line">PyTorch · TensorFlow · scikit-learn · SHAP</p></article>
-      <article><h3>Data engineering</h3><p>Build reproducible pipelines for large, multidimensional data. Use parallel processing, chunked arrays, and practical validation to make analysis repeatable.</p><p class="tech-line">Python · SQL · Xarray · Dask · Spark</p></article>
-      <article><h3>Scientific computing</h3><p>Run simulation and machine learning workflows on shared compute. Package environments and document inputs so collaborators can reproduce results.</p><p class="tech-line">Linux · Slurm · Docker · NetCDF · Zarr</p></article>
+      <article>
+        <h3>Machine learning</h3>
+        <p>Build and evaluate models for geospatial prediction, from statistical baselines to deep learning.</p>
+        <ul>
+          <li>Apply CNNs, RNNs, and LSTMs to geospatial data and use evidential deep learning to estimate uncertainty in streamflow emulators.</li>
+          <li>Benchmark predictions with RMSE and Nash–Sutcliffe efficiency (NSE), and diagnose model bias.</li>
+        </ul>
+        <p class="tech-line">PyTorch · TensorFlow · Keras · scikit-learn · SHAP · TerraTorch</p>
+      </article>
+      <article>
+        <h3>Data engineering</h3>
+        <p>Build reproducible pipelines for large gridded and time-series datasets.</p>
+        <ul>
+          <li>Prepare model forcings and training data with quality checks, feature engineering, and alignment of spatial attributes.</li>
+          <li>Use chunked arrays and parallel processing to scale preprocessing for NetCDF and Zarr datasets.</li>
+        </ul>
+        <p class="tech-line">Python · SQL · Xarray · Dask · Spark · pandas · NumPy</p>
+      </article>
+      <article>
+        <h3>Scientific computing</h3>
+        <p>Run CLM5 simulation ensembles and train models on shared high-performance computing (HPC) systems.</p>
+        <ul>
+          <li>Schedule parallel workloads and optimize GPU training, data I/O, and memory use.</li>
+          <li>Containerize runs, track experiments, and document inputs so collaborators can reproduce results.</li>
+        </ul>
+        <p class="tech-line">Linux · Slurm · Docker · Singularity · MLflow</p>
+      </article>
     </div>
   </div>
 </section>

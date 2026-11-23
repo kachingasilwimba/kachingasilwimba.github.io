@@ -65,7 +65,7 @@
         </details>
         <details>
           <summary><span class="lesson-number">03</span><span>Compare embeddings across dates</span><span class="disclosure" aria-hidden="true"></span></summary>
-          <div class="lesson-body"><p>Run the pretrained encoder and compare vectors from the same patch on two dates. A low cosine similarity flags a difference in the representation. Look at the imagery and quality masks before interpreting what changed on the ground.</p><a href="#setup">Run the model</a></div>
+          <div class="lesson-body"><p>Run the pretrained encoder and compare vectors from the same patch on two dates. A larger cosine distance flags a difference in the representation. Check the imagery for clues and use cloud and shadow quality masks in an operational analysis.</p><a href="#setup">Run the model</a></div>
         </details>
       </div>
     </section>
@@ -112,7 +112,7 @@
                 <p class="band-heading">Mean surface reflectance</p>
                 <dl id="bands" class="bands"></dl>
               </div>
-              <p class="patch-note">Embedding distance is precomputed with the pretrained Tiny-TL encoder. Larger values indicate a greater change in the model’s representation of the patch. Use the imagery to investigate what might explain it.</p>
+              <p class="patch-note">Embedding distance is precomputed with the pretrained Tiny-TL encoder. Larger values indicate a greater change in the model’s representation of the patch. Compare the imagery for clues. The valid-pixel count tracks missing data. Cloud and shadow masking is a separate step.</p>
             </div>
           </div>
           <div class="tool-footer"><span>HLS Sentinel-2 · Tile T13REM · 30 m pixels</span><a href="https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-tiny-TL/tree/335eadc2c45ad5abe7bd307223e1c48c5b60c41b/examples">Source imagery</a></div>
@@ -134,7 +134,7 @@
             <div class="code-block"><pre><code id="install-code">python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt</code></pre><button class="copy" type="button" data-copy="install-code">Copy</button></div>
-            <p class="command-followup">Install the CPU encoder and geospatial dependencies. On macOS, run only the second command.</p>
+            <p class="command-followup">Install the CPU encoder and geospatial dependencies. On Apple Silicon, run only the second command.</p>
             <div class="code-block"><pre><code id="model-code">python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements-model.txt</code></pre><button class="copy" type="button" data-copy="model-code">Copy</button></div>
           </div>

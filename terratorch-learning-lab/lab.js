@@ -4,7 +4,7 @@ const get = (id) => document.getElementById(id);
 const captions = {
   "true-color": "Red, green, and blue make the visible-light composite.",
   "false-color": "Near infrared, red, and green map to screen red, green, and blue. Vegetation tends to appear red.",
-  ndvi: "NDVI compares near-infrared and red reflectance. Higher values usually correspond to more green vegetation.",
+  ndvi: "The Normalized Difference Vegetation Index (NDVI) is (NIR − red) / (NIR + red). Higher values usually correspond to more green vegetation.",
 };
 const bandColors = ["#94bdea", "#9ad6a3", "#f6a391", "#ffd193", "#d4b5e0", "#bca9d9"];
 const dateText = new Intl.DateTimeFormat("en", { dateStyle: "long", timeZone: "UTC" });

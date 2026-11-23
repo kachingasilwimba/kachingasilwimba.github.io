@@ -28,7 +28,7 @@
         <p>{{ project.summary | escape }}</p>
       </header>
 
-      <div class="gallery-figures" data-gallery-tabs role="tablist" aria-label="{{ project.topic | escape }} figures" hidden>
+      <div class="gallery-figures" data-figure-count="{{ project.figures | size }}" data-gallery-tabs role="tablist" aria-label="{{ project.topic | escape }} figures" hidden>
         {% for figure in project.figures %}
         <button class="gallery-thumbnail" type="button" role="tab" id="gallery-thumb-{{ project.id }}-{{ figure.id }}" aria-controls="gallery-figure-{{ project.id }}-{{ figure.id }}">
           <img src="{{ figure.image | relative_url }}" alt="" width="80" height="52" loading="lazy" decoding="async">

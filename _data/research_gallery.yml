@@ -42,6 +42,48 @@
       source: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0003
       credit: Silwimba et al. (2026), Figure 3
       rights: Archived author figure
+    - id: monthly-uncertainty
+      label: Figure 8
+      title: When is the emulator most uncertain?
+      preview: Monthly uncertainty
+      image: /assets/portfolio/research/figure-8-monthly-uncertainty.webp
+      width: 1927
+      height: 820
+      alt: Grouped bars compare monthly data-related, model-related, and total uncertainty in leaf area index anomalies, with error bars for year-to-year variation.
+      takeaway: Across 100 held-out ensemble runs, total uncertainty was highest in March and lowest in December.
+      metric:
+        value: March
+        label: Month of highest total uncertainty
+      source: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0008
+      credit: Silwimba et al. (2026), Figure 8
+      rights: CC BY 4.0 · Cropped from the published PDF
+    - id: uncertainty-calibration
+      label: Figure 9
+      title: How reliable are the uncertainty estimates?
+      preview: Calibration diagnostics
+      image: /assets/portfolio/research/figure-9-uncertainty-calibration.webp
+      width: 1925
+      height: 777
+      alt: A reliability diagram compares observed and expected interval coverage. Histograms of the predicted probability at each observed outcome have tall bars at both ends.
+      takeaway: The prediction intervals covered about as many results as expected on average. Spikes at both ends of the histogram show that the model assigned too little spread to extreme outcomes.
+      source: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0009
+      credit: Silwimba et al. (2026), Figure 9
+      rights: CC BY 4.0 · Cropped from the published PDF
+    - id: uncertainty-discard-test
+      label: Figure 10
+      title: Can uncertainty flag larger prediction errors?
+      preview: Uncertainty discard test
+      image: /assets/portfolio/research/figure-10-uncertainty-discard-test.webp
+      width: 2198
+      height: 717
+      alt: A line chart shows prediction error after dropping the most uncertain points. A bar chart compares the two uncertainty rankings for ten held-out ensemble runs.
+      takeaway: Removing the most uncertain predictions generally reduced the error of those that remained. Which uncertainty measure ranked errors better varied by ensemble run.
+      metric:
+        value: '10'
+        label: Held-out ensemble runs compared
+      source: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0010
+      credit: Silwimba et al. (2026), Figure 10
+      rights: CC BY 4.0 · Cropped from the published PDF
     - id: sensitivity
       label: Figure 12
       title: Which model settings matter most?
@@ -82,66 +124,104 @@
       source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F9
       credit: Silwimba et al. (2025), Figure 9
       rights: CC BY 4.0
-    - id: seasonal-cycle
-      label: Figure 7
-      title: When do soils wet and dry?
-      preview: Seasonal cycle
-      image: /assets/portfolio/research/soil-seasonal-cycle.webp
-      width: 1560
-      height: 538
-      alt: Monthly root-zone soil moisture across the contiguous United States, with ERA5-Land showing the largest seasonal swings.
-      takeaway: ERA5-Land shows a stronger spring peak and more late-summer drying than the CLM5 experiments. The loamy-sand run came closest to the reference seasonal swing.
-      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F7
-      credit: Silwimba et al. (2025), Figure 7
+    - id: dominant-patterns
+      label: Figure 3
+      title: How do we find the strongest patterns?
+      preview: Extracting patterns
+      image: /assets/portfolio/research/soil-figure-3-reducing-variability.webp
+      width: 587
+      height: 320
+      alt: Diagram of truncated singular value decomposition splitting soil moisture data into spatial patterns, their weights, and how each pattern changes over time.
+      takeaway: The analysis keeps the patterns that explain the most soil moisture variability. It shows where conditions tend to change together and how strongly each pattern appears over time.
+      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F3
+      credit: Silwimba et al. (2025), Figure 3
       rights: CC BY 4.0
-    - id: experiment
-      label: Figure 2
-      title: How did we isolate the effect of soil?
-      preview: Experiment design
-      image: /assets/portfolio/research/soil-parameter-experiments.webp
-      width: 954
-      height: 497
-      alt: Flowchart showing shared weather inputs feeding seven CLM5 runs with different soil settings.
-      takeaway: The seven simulations used the same weather input and varied how the soil stores and moves water. Holding the weather fixed lets us trace differences in the results to the soil settings.
-      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F2
-      credit: Silwimba et al. (2025), Figure 2
+    - id: pattern-agreement
+      label: Figure 12
+      title: How closely do the simulations agree?
+      preview: Comparing patterns
+      image: /assets/portfolio/research/soil-figure-12-pattern-agreement.webp
+      width: 1892
+      height: 624
+      alt: Three Taylor diagrams compare the leading soil moisture patterns from seven CLM5 experiments with ERA5-Land, marked with a red star.
+      takeaway: The second leading pattern generally matched the ERA5-Land reference less closely than the first or third. Agreement depended on which pattern and soil settings were compared.
+      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F12
+      credit: Silwimba et al. (2025), Figure 12
+      rights: CC BY 4.0
+    - id: regional-differences
+      label: Figure 11
+      title: Where do the largest differences remain?
+      preview: Regional differences
+      image: /assets/portfolio/research/soil-figure-11-regional-differences.webp
+      width: 1440
+      height: 821
+      alt: Nine maps compare three CLM5 experiments with ERA5-Land. Hatched regions show closer agreement and darker orange or red regions show larger differences.
+      takeaway: The leading soil moisture pattern agreed especially well with ERA5-Land in the western United States. The central Great Plains showed larger differences across experiments and patterns.
+      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F11
+      credit: Silwimba et al. (2025), Figure 11
       rights: CC BY 4.0
 
 - id: streamflow
   topic: Streamflow prediction
   area: Mountain hydrology
   title: Predicting streamflow in snow-dominated basins
-  summary: I developed an emulator to estimate monthly streamflow anomalies and quantify uncertainty in basins where snowmelt shapes the timing and amount of water available.
-  paper: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
-  paper_label: Read the SIAM article
+  summary: I developed an evidential deep learning emulator for monthly streamflow anomalies, using CLM5 ensembles to test prediction accuracy, uncertainty, and transfer between basin types.
+  paper: https://essopenarchive.org/doi/full/10.22541/essoar.15003561/v1
+  paper_label: Read the preprint
   links:
-    - label: Read the streamflow preprint
-      url: https://doi.org/10.22541/essoar.15003561/v1
+    - label: View the analysis code
+      url: https://doi.org/10.5281/zenodo.18357484
+    - label: Get the basin-scale data
+      url: https://doi.org/10.5281/zenodo.15720131
   figures:
-    - id: basins
-      label: Figure 1
-      title: Where did we test the emulator?
-      preview: Basin clusters
-      image: /assets/portfolio/research/streamflow-basin-clusters.webp
-      width: 1065
-      height: 1200
-      alt: Map of the western United States marking 69 snow-dominated basins, distinguished by color and shape across six clusters.
-      takeaway: Grouping basins by snow fraction, elevation, vegetation, and subsurface properties let us test whether the emulator could generalize to unfamiliar basin types.
+    - id: training-diversity
+      label: Figure 2
+      title: How does a larger training ensemble affect accuracy?
+      preview: Training diversity
+      image: /assets/portfolio/research/streamflow-figure-2.webp
+      width: 1601
+      height: 1154
+      alt: Four line charts show predictive skill, root-mean-square error, bias, and mean absolute error across four basin clusters as training expands from 30 to 150 CLM5 ensemble members.
+      takeaway: Training on more CLM5 simulations generally improved skill and reduced error. The biggest gains usually came when training expanded from 30 to 60 ensemble members.
       metric:
-        value: '69'
-        label: Basins grouped into six clusters
-      source: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
-      credit: Kachinga Silwimba (2026), SIAM News, Figure 1
-      rights: Figure courtesy of the author
-    - id: uncertainty
+        value: '30 to 60'
+        label: Ensemble members during the largest gains
+      source: https://essopenarchive.org/doi/pdf/10.22541/essoar.15003561/v1?redirectToLatest=false#page=16
+      credit: Silwimba et al. (2026), ESS Open Archive, Figure 2
+      rights: Author/funder copyright
+    - id: point-calibration
       label: Figure 4
-      title: Can uncertainty flag errors before we see them?
-      preview: Streamflow uncertainty
-      image: /assets/portfolio/research/streamflow-uncertainty.webp
-      width: 1200
-      height: 617
-      alt: Two plots compare streamflow error across four basin clusters as predictions are removed. Error falls faster when predictions are filtered by model uncertainty.
-      takeaway: Excluding the predictions with the highest model uncertainty lowered the remaining error more than filtering by data variability. This can help flag predictions that warrant a closer look.
-      source: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
-      credit: Kachinga Silwimba (2026), SIAM News, Figure 4
-      rights: Figure courtesy of the author
+      title: How well does the emulator capture extremes?
+      preview: Prediction calibration
+      image: /assets/portfolio/research/streamflow-figure-4.webp
+      width: 1601
+      height: 807
+      alt: A binned calibration plot and a quantile plot compare predicted streamflow anomalies with CLM5 simulations for four clusters. Both compare the results with a diagonal line of perfect agreement.
+      takeaway: Predictions closely tracked the middle of the simulated distribution. At the extremes, the emulator tended to predict higher values for low-flow anomalies and lower values for high-flow anomalies.
+      source: https://essopenarchive.org/doi/pdf/10.22541/essoar.15003561/v1?redirectToLatest=false#page=18
+      credit: Silwimba et al. (2026), ESS Open Archive, Figure 4
+      rights: Author/funder copyright
+    - id: transfer-skill
+      label: Figure 8
+      title: How well does the model transfer to other basins?
+      preview: Transfer to new basins
+      image: /assets/portfolio/research/streamflow-figure-8.webp
+      width: 1601
+      height: 1003
+      alt: Four charts compare transferred models with models trained on each target cluster. The skill and error differences approach the zero line as the training ensemble grows.
+      takeaway: Models transferred from other clusters generally had lower skill than models trained on the target clusters. A more diverse training ensemble narrowed the gap, particularly for target Cluster 6.
+      source: https://essopenarchive.org/doi/pdf/10.22541/essoar.15003561/v1?redirectToLatest=false#page=22
+      credit: Silwimba et al. (2026), ESS Open Archive, Figure 8
+      rights: Author/funder copyright
+    - id: uncertainty-components
+      label: Figure 3
+      title: Which uncertainty shrinks with more training data?
+      preview: Sources of uncertainty
+      image: /assets/portfolio/research/streamflow-figure-3.webp
+      width: 1601
+      height: 619
+      alt: Two charts compare model uncertainty and data variability across four basin clusters as the number of CLM5 ensemble members used in training increases.
+      takeaway: Model uncertainty generally fell as the training ensemble grew. The uncertainty associated with variability in the data stayed comparatively small, with some clusters increasing at the largest training size.
+      source: https://essopenarchive.org/doi/pdf/10.22541/essoar.15003561/v1?redirectToLatest=false#page=17
+      credit: Silwimba et al. (2026), ESS Open Archive, Figure 3
+      rights: Author/funder copyright

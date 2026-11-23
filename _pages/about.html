@@ -71,39 +71,7 @@ redirect_from:
     <div><p class="kicker"><span class="signal" aria-hidden="true"></span> Research projects</p><h2 id="research-title">Models, data, and results</h2></div>
     <a class="text-link" href="{{ '/publications/' | relative_url }}">Browse all research</a>
   </div>
-  <div class="research-grid">
-    <article class="research-card">
-      <figure>
-        <div class="research-image">
-          <img src="{{ '/assets/portfolio/land-surface-figure-2.webp' | relative_url }}" alt="Three density plots compare predicted and simulated leaf area index anomalies, with R-squared values of 0.91, 0.83, and 0.83." width="1511" height="706" loading="lazy">
-        </div>
-        <figcaption class="figure-credit">
-          <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0002">Silwimba et al. (2026), Figure 2</a>
-          <a href="{{ '/assets/portfolio/land-surface-figure-2.webp' | relative_url }}">View full-size figure</a>
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        </figcaption>
-      </figure>
-      <div class="research-card-body">
-        <p class="kicker">Evidential deep learning · 2026</p>
-        <h3>Faster land-surface modeling</h3>
-        <p>I led development of a CLM5 surrogate trained on 400 ensemble members. It predicts leaf area index, estimates two kinds of uncertainty, and supports sensitivity analysis across 32 model parameters.</p>
-        <div class="resource-links"><a href="https://doi.org/10.1029/2025MS005587">Read the paper</a><a href="https://github.com/kachingasilwimba/clm5-lai-ppe-ednn">View code</a></div>
-      </div>
-    </article>
-    <article class="research-card">
-      <figure><div class="research-image"><img src="{{ '/assets/portfolio/soil-moisture.webp' | relative_url }}" alt="Twelve maps show three leading soil-moisture patterns for ERA5-Land and three CLM5 experiments" width="1020" height="724" loading="lazy"></div><figcaption class="figure-credit"><a href="https://gmd.copernicus.org/articles/18/7707/2025/gmd-18-7707-2025.html#Ch1.F9">Silwimba et al. (2025), Fig. 9</a><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></figcaption></figure>
-      <div class="research-card-body">
-        <p class="kicker">Spatiotemporal analysis · 2025</p>
-        <h3>Why soil moisture simulations disagree</h3>
-        <p>I led a comparison of CLM5 soil parameter settings using 31 years of simulations. The analysis isolated regional differences in soil moisture and produced a reusable diagnostic toolkit.</p>
-        <div class="resource-links"><a href="https://doi.org/10.5194/gmd-18-7707-2025">Read the paper</a><a href="https://github.com/kachingasilwimba/spmip-eof-analysis">View code</a><a href="https://doi.org/10.5281/zenodo.15078448">Get the data</a></div>
-      </div>
-    </article>
-  </div>
-  <article class="research-note">
-    <div><p class="kicker">Hydrology · 2026</p><h3>Snow and streamflow prediction</h3><p>I contributed to research combining satellite observations and weather inputs to estimate snow water equivalent. I also developed uncertainty-aware emulators for monthly streamflow anomalies in snow-dominated basins.</p></div>
-    <div class="resource-links"><a href="https://doi.org/10.1175/JHM-D-25-0208.1">Snow water equivalent paper</a><a href="https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/">Streamflow research in SIAM News</a></div>
-  </article>
+  {% include portfolio-research-gallery.html %}
 </section>
 
 <section class="capabilities" aria-labelledby="skills-title">

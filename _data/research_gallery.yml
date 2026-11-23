@@ -1,0 +1,161 @@
+- id: emulation
+  topic: Land-surface emulation
+  area: Evidential deep learning
+  title: Faster land-surface modeling
+  summary: I led development of a CLM5 emulator trained on 400 ensemble members. It predicts leaf area index, estimates uncertainty, and makes it practical to test which model parameters matter by season.
+  paper: https://doi.org/10.1029/2025MS005587
+  links:
+    - label: View the code
+      url: https://github.com/kachingasilwimba/clm5-lai-ppe-ednn
+    - label: Reproduce the figures
+      url: https://doi.org/10.5281/zenodo.17418678
+    - label: Get the data
+      url: https://doi.org/10.5281/zenodo.15170936
+  figures:
+    - id: validation
+      label: Figure 2
+      title: Does the emulator work on unseen data?
+      preview: Held-out validation
+      image: /assets/portfolio/land-surface-figure-2.webp
+      width: 1511
+      height: 706
+      alt: Three density plots compare predicted and simulated leaf area index anomalies, with R-squared values of 0.91, 0.83, and 0.83.
+      takeaway: The closer the dense points are to the diagonal, the closer the emulator is to CLM5. It tracked leaf area changes even when both the model settings and years were new to it.
+      metric:
+        value: '0.83'
+        label: R² on held-out members and years
+      source: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0002
+      credit: Silwimba et al. (2026), Figure 2
+      rights: Archived author figure
+    - id: seasonal
+      label: Figure 3
+      title: How does accuracy change by season?
+      preview: Seasonal accuracy
+      image: /assets/portfolio/research/figure-3-seasonal-validation.webp
+      width: 1111
+      height: 1208
+      alt: Four seasonal hexbin plots compare emulator and CLM5 leaf area index anomalies.
+      takeaway: Agreement with CLM5 was strongest in winter and summer. Spring was harder to match, but the emulator still outperformed a baseline that predicted no departure from typical conditions.
+      metric:
+        value: '0.71'
+        label: Spring skill relative to the zero-anomaly baseline
+      source: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0003
+      credit: Silwimba et al. (2026), Figure 3
+      rights: Archived author figure
+    - id: sensitivity
+      label: Figure 12
+      title: Which model settings matter most?
+      preview: Parameter sensitivity
+      image: /assets/portfolio/research/figure-12-seasonal-sensitivity.webp
+      width: 1800
+      height: 1887
+      alt: Four bar charts show how individual CLM5 parameters and their interactions contribute to seasonal leaf area index variability.
+      takeaway: Photosynthesis parameters matter across seasons. In fall, one setting related to photosynthetic capacity explained nearly one-fifth of the simulated variation in leaf area on its own.
+      metric:
+        value: '≈18%'
+        label: Fall variation attributed to one parameter
+      source: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005587#jame70458-fig-0012
+      credit: Silwimba et al. (2026), Figure 12
+      rights: Archived author figure
+
+- id: moisture
+  topic: Soil moisture
+  area: Land-surface hydrology
+  title: Why soil moisture simulations disagree
+  summary: I led a comparison of 31 years of CLM5 simulations to understand how assumptions about soil change the timing and geography of soil moisture.
+  paper: https://doi.org/10.5194/gmd-18-7707-2025
+  links:
+    - label: View the analysis code
+      url: https://github.com/kachingasilwimba/spmip-eof-analysis
+    - label: Get the data
+      url: https://doi.org/10.5281/zenodo.15078448
+  figures:
+    - id: geography
+      label: Figure 9
+      title: Where do the moisture patterns change?
+      preview: Spatial patterns
+      image: /assets/portfolio/soil-moisture.webp
+      width: 1020
+      height: 724
+      alt: Twelve maps show three leading soil-moisture patterns for ERA5-Land and three CLM5 experiments.
+      takeaway: The maps show which regions tend to wet or dry together. The broadest pattern recurs across the runs, while secondary patterns reveal where the simulations respond differently to the soil settings.
+      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F9
+      credit: Silwimba et al. (2025), Figure 9
+      rights: CC BY 4.0
+    - id: seasonal-cycle
+      label: Figure 7
+      title: When do soils wet and dry?
+      preview: Seasonal cycle
+      image: /assets/portfolio/research/soil-seasonal-cycle.webp
+      width: 1560
+      height: 538
+      alt: Monthly root-zone soil moisture across the contiguous United States, with ERA5-Land showing the largest seasonal swings.
+      takeaway: ERA5-Land shows a stronger spring peak and more late-summer drying than the CLM5 experiments. The loamy-sand run came closest to the reference seasonal swing.
+      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F7
+      credit: Silwimba et al. (2025), Figure 7
+      rights: CC BY 4.0
+    - id: experiment
+      label: Figure 2
+      title: How did we isolate the effect of soil?
+      preview: Experiment design
+      image: /assets/portfolio/research/soil-parameter-experiments.webp
+      width: 954
+      height: 497
+      alt: Flowchart showing shared weather inputs feeding seven CLM5 runs with different soil settings.
+      takeaway: The seven simulations used the same weather input and varied how the soil stores and moves water. Holding the weather fixed lets us trace differences in the results to the soil settings.
+      source: https://gmd.copernicus.org/articles/18/7707/2025/#Ch1.F2
+      credit: Silwimba et al. (2025), Figure 2
+      rights: CC BY 4.0
+
+- id: snow
+  topic: Snow and streamflow
+  area: Mountain hydrology
+  title: Snowpack and streamflow prediction
+  summary: I coauthored a study that combined satellite observations and weather inputs to estimate snow water equivalent. My streamflow research studies how to measure uncertainty in predictions for snow-dominated basins.
+  paper: https://doi.org/10.1175/JHM-D-25-0208.1
+  links:
+    - label: View the snowpack model code
+      url: https://github.com/stanleyakor1/naoh_mp_swe_emulation
+    - label: Read the streamflow preprint
+      url: https://doi.org/10.22541/essoar.15003561/v1
+  figures:
+    - id: satellite-skill
+      label: Results from Figure 6
+      title: What do satellite observations add?
+      preview: Satellite data and skill
+      image: /assets/portfolio/research/snow-spatial-skill.webp
+      width: 1575
+      height: 795
+      alt: Bar charts show that adding satellite snow cover and vegetation data increases the share of pixels with nonnegative model skill in 2016 and 2017.
+      takeaway: Adding satellite snow cover and vegetation data increased the share of pixels that matched or beat a local mean baseline in both water years, using the Noah-MP simulation as the reference.
+      metric:
+        value: '+9.92'
+        label: Percentage point gain in pixels with nonnegative skill, 2016
+      source: https://doi.org/10.1175/JHM-D-25-0208.1
+      credit: Portfolio chart from Akor et al. (2026), Figure 6 results
+    - id: study-area
+      label: Figure 1
+      title: Where did we check the snow estimates?
+      preview: Colorado study area
+      image: /assets/portfolio/research/snow-study-domain.webp
+      width: 1440
+      height: 720
+      alt: Three panels locate the study in the western US, show Colorado elevations and SNOTEL stations, and summarize station elevation ranges.
+      takeaway: Snow Telemetry (SNOTEL) stations span a range of elevations across the Colorado Rockies. The map shows where field measurements were available to check the snowpack estimates.
+      source: https://doi.org/10.1175/JHM-D-25-0208.1
+      credit: Akor et al. (2026), J. Hydrometeor., 27(9), 1425–1445, Figure 1
+      rights: © 2026 American Meteorological Society
+    - id: uncertainty
+      label: Figure 4
+      title: Can uncertainty flag errors before we see them?
+      preview: Streamflow uncertainty
+      image: /assets/portfolio/research/streamflow-uncertainty.webp
+      width: 1200
+      height: 617
+      alt: Two plots compare streamflow error across four basin clusters as predictions are removed. Error falls faster when predictions are filtered by model uncertainty.
+      takeaway: Excluding the predictions with the highest model uncertainty lowered the remaining error more than filtering by data variability. This can help flag predictions that warrant a closer look.
+      paper: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
+      paper_label: Read the SIAM article
+      source: https://www.siam.org/publications/siam-news/articles/when-ensembles-teach-evidential-emulators-for-snowmelt-streamflow/
+      credit: Kachinga Silwimba (2026), SIAM News, Figure 4
+      rights: Figure courtesy of the author

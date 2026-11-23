@@ -1,7 +1,7 @@
 - id: emulation
   topic: Land-surface emulation
   area: Evidential deep learning
-  title: Faster land-surface modeling
+  title: Uncertainty-aware emulation of CLM5 leaf area index
   summary: I led development of a CLM5 emulator trained on 400 ensemble members. It predicts leaf area index, estimates uncertainty, and makes it practical to test which model parameters matter by season.
   paper: https://doi.org/10.1029/2025MS005587
   links:
@@ -103,8 +103,8 @@
 - id: moisture
   topic: Soil moisture
   area: Land-surface hydrology
-  title: Why soil moisture simulations disagree
-  summary: I led a comparison of 31 years of CLM5 simulations to understand how assumptions about soil change the timing and geography of soil moisture.
+  title: EOF analysis of CLM5 soil moisture variability
+  summary: I led a 31-year comparison of CLM5 simulations using empirical orthogonal function (EOF) analysis to understand where and when soil moisture varies under different soil assumptions.
   paper: https://doi.org/10.5194/gmd-18-7707-2025
   links:
     - label: View the analysis code
@@ -164,8 +164,8 @@
 - id: streamflow
   topic: Streamflow prediction
   area: Mountain hydrology
-  title: Predicting streamflow in snow-dominated basins
-  summary: I developed an evidential deep learning emulator for monthly streamflow anomalies, using CLM5 ensembles to test prediction accuracy, uncertainty, and transfer between basin types.
+  title: Evidential emulation of monthly streamflow anomalies
+  summary: I developed an evidential deep learning emulator for snow-dominated basins, using CLM5 ensembles to evaluate prediction accuracy, uncertainty, and transfer between basin types.
   paper: https://essopenarchive.org/doi/full/10.22541/essoar.15003561/v1
   paper_label: Read the preprint
   links:

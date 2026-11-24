@@ -107,7 +107,7 @@ ul, ol { padding-inline-start: 1.2em; }
 .skill-grid li + li { margin-top: .4rem; }
 .skill-grid .tech-line { margin-top: auto; }
 .tech-line { margin-bottom: 0; color: #233c81; font: .82rem/1.65 var(--mono); }
-.about-section { background: var(--night); border-top-color: #344563; }
+.about-section { background: white; }
 .about-profile { display: grid; grid-template-columns: minmax(0, 1fr) minmax(12rem, .5fr); align-items: center; gap: clamp(1.25rem, 4.5vw, 3.6rem); padding: clamp(1.2rem, 4vw, 3.15rem); border: 1px solid #344563; border-top: 3px solid #9eafe9; border-radius: 10px; color: #e5ecff; background: var(--night); }
 .about-copy :is(h2, h3) { color: white; }
 .about-copy h2 { margin-bottom: 1rem; font-size: clamp(2rem, 4.2vw, 3.45rem); text-wrap: balance; }
